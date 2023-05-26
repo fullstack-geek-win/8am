@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        hr {
+            background-color: aliceblue;
+        }
+        div {
+            background-color:darkgreen;
+            font-family: fantasy;        
+        }
+        div.answer {
+            background-color:orange;
+            color:ivory;
+            font-family: serif;
+        }
+        /* p, input, label {
+            background-color:orange;
+            color:ivory;        } */
+    </style>
+</head>
+<body>
+    <h1>Frequently Asked Questions</h1>
+    <hr>
+    <div>
+        Question 1: What is our Batch Name?
+        <!-- <p>Full Stack Development Program</p> -->
+        <div class="answer">
+            <input type="radio" name="Q1" id="FSDP" />
+            <label for="FSDP">FSDP</label>
+        </div>
+        <div class="answer">
+            <input type="radio" name="Q1" id="Frontend" />
+            <label for="Frontend">Frontend</label>
+        </div>
+        <div class="answer">
+            <input type="radio" name="Q1" id="Backend" />
+            <label for="Backend">Backend</label>
+        </div>
+        Question 2: What is our Batch Timing?
+        <div class="answer">
+            <input type="radio" name="Q2" id="6AM" />
+            <label for="6AM">6 AM IST</label>
+        </div>
+        <div class="answer">
+            <input type="radio" name="Q2" id="8AM" />
+            <label for="8AM">8 AM IST</label>
+        </div>
+    </div>
+</body>
+</html>
