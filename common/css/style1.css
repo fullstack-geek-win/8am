@@ -1,0 +1,81 @@
+/* External CSS */
+
+* {
+    font-family: sans-serif
+}
+body {
+    background-color: lightyellow;
+
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    float: right;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+pre {
+    text-align: center;
+}
+
+table,
+td {
+    border: 2px solid black;
+}
+
+thead {
+    text-align: center;
+}
+
+thead tr:first-child {
+    text-align: center;
+    background-color: coral;
+}
+
+tbody tr:first-child {
+    text-align: center;
+    background-color: blanchedalmond;
+}
+
+tr {
+    background-color:floralwhite;
+}
+
+#align {
+    text-align: right;
+}
+
+p {
+    text-align: center;
+
+}
+
+#para {
+    font-size: 20px;
+    color: brown;
+}
+
+.color {
+    color: dodgerblue;
+}
+
+.size {
+    font-size: xx-large;
+}
+
+h5.color {
+    color: rgba(238, 9, 192, 0.475);
+}
+
+p.color {
+    color: red;
+}
