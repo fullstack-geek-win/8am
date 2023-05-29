@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./Image/favicon.ico" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- code for hotel name and logo -->
+    <table align="center" style="width: 30%;background-color:#BAB86C">
+        <thead>
+            <tr>
+                <td style="padding-right: 8px;padding-left:2px;">
+                    <img src="./Image/chefLogo.jpg" height="90px" width="90px"
+                        style="border-top-left-radius: 50%;border-bottom-right-radius: 50%;">
+                </td>
+                <td colspan="2" style="display: block;">
+                    <pre
+                        style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 20px;margin: 0px;text-align: center; margin-top: 7px;">Yum & Healthy Hotel </pre>
+                    <hr style="width: 210px;margin: 0px;margin-top: 10px;">
+                    <p style="font-family:Rockwell;text-align: center;font-size: 10px;"><strong>Robertson,
+                            1234 NW Bobcat Lane,
+                            St. Robert, MO 65584-5678</strong> </p>
+                <td>
+                    <img src="./Image/Yum.png" height="90px" width="90px"
+                        style="border-top-right-radius: 50%;border-bottom-left-radius: 50%;">
+                </td>
+            </tr>
+        </thead>
+    </table>
+    <hr width="30%">
+    <table align="center">
+        <tr>
+            <td class="naviAlign">
+                <div><a href="MenuDesign.html">Menu</a></div>
+                <div><a href="CustometDetails.html">Customer detail</a></div>
+                <div><a href="placeOrder.html">Place order</a></div>
+            </td>
+
+            <td>
+                <form action="placeOrder.html" method="GET" class="formAlign">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="username">Username</label>
+                            </td>
+                            <td>
+                                <input id="username" name="username" placeholder="Enter your name" minlength="2"
+                                    maxlength="10" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="email">Email</label>
+                            </td>
+                            <td>
+                                <input type="email" id="email" name="email" placeholder="Enter Email">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="Tel">Telephone</label>
+                            </td>
+                            <td>
+                                <input type="tel" id="telephone" name="telephone" placeholder="Enter Telephone Number">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="address">Address</label>
+                            </td>
+                            <td>
+                                <textarea type="text" id="address" cols="15" row="5"
+                                    name="address">Enter Address Here...</textarea>
+                            </td>
+                        </tr>
+
+                    </table>
+                    <div>
+                        <button type="submit" style="background-color: red;">Submit</button>
+                        <button type="reset" class="buttonclr">Reset</button>
+                    </div>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
