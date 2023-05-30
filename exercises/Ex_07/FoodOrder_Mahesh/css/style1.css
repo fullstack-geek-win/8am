@@ -1,0 +1,29 @@
+.image {
+    height: 20px;
+    width: 100px;
+    border-radius: 10px;
+}
+body{background-color: antiquewhite;}
+
+td {
+    vertical-align: top;
+}
+
+div button {
+    background-color: darkgoldenrod;
+}
+
+tr {
+    font-family:inherit; font-style:italic;
+}
+
+hr {
+    width: 40%;
+    background-color: darkgreen;
+    border-width: 5;
+    color: darkgreen;
+
+}
+.table{background-color: darkturquoise; width: 40%; border-radius: 10px;}
+.color{background-color:greenyellow;}
+.color1{background-color: plum;}

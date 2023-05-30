@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style1.css">
+    <title>Customer Details</title>
+</head>
+
+<body>
+    <!-- code for hotel name and details -->
+    <table align="center" class="table">
+        <thead>
+        <tbody>
+            <tr>
+                <td>Catering Services</td>
+            </tr>
+            <tr>
+                <td>Franchises Done here</td>
+                <td style="font-size:xx-large;font-style: italic;column-span: 2; text-align:center; font-weight: bolder;"
+                    rowspan="2">Biriyani House</td>
+            </tr>
+            <tr>
+                <td>We undertake outdoor catering</td>
+            </tr>
+            <tr>
+                <td><img src="./Image/swiggy.jpg" class="image" />
+                    <img src="./Image/zomato.jpg" class="image" />
+                </td>
+            </tr>
+        </tbody>
+        </thead>
+    </table>
+    <hr width="35%">
+    <table align="center" style="width: 40%;height: 30%;">
+        <tr>
+            <td class="color">
+                <div><a href="Menu.html">Menu</a></div>
+                <div><a href="CustomerDetails.html">Customer Details</a></div>
+                <div><a href="PlaceOrder.html">Place Order</a></div>
+            </td>
+            <td>
+                <form action="./PlaceOrder.html" method="GET">
+                    <div>
+                        <label for="username">Username</label>
+                        <input id="username" name="username" placeholder="Enter your username" minlength="5"
+                            maxlength="10" required />
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" name="email" placeholder="Enter your email id" required />
+                    </div>
+                    <div>
+                        <label for="telephone">Mobile</label>
+                        <input type="telephone" id="telephone" name="telephone" placeholder="Enter mobile number"required />
+                    </div>
+                    <div>
+                        <label for="address">Address</label>
+                        <textarea name="address" id="address" cols="15" rows="5"
+                            placeholder="Enter address here.."required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Continue</button>
+                        <button type="reset">Clear</button>
+                    </div>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

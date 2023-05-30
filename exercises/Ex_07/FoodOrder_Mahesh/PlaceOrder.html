@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style1.css">
+    <title>Place Order</title>
+    <script>
+        function FetchCustomerDetails() {
+            //Querystring & Parameters
+            var queryString = window.location.search;
+            var params = new URLSearchParams(queryString);
+
+            // Input Parameters
+            var UserNameOutput = params.get("username");
+            var EmailInput = params.get("email");
+            var TelephoneOutput = params.get("telephone");
+            var AddressOutput = params.get("address");
+
+            // Output Parameters
+
+            var UserNameOutput = document.getElementById("o_username");
+            var EmailOutput = document.getElementById("o_email");
+            var TelephoneOutput = document.getElementById("o_telephone");
+            var AddressOutput = document.getElementById("o_address");
+
+            UserNameOutput.value = UserNameInput;
+            EmailOutput.value = EmailInput;
+            TelephoneOutput.value = TelephoneInput;
+            AddressOutput.value = AddressInput;
+        }
+    </script>
+</head>
+
+<body onload="FetchCustomerDetails()">
+    <!-- code for hotel name and details -->
+    <table align="center" class="table">
+        <thead>
+        <tbody>
+            <tr>
+                <td>Catering Services</td>
+            </tr>
+            <tr>
+                <td>Franchises Done here</td>
+                <td style="font-size:xx-large;font-style: italic;column-span: 2; text-align:center; font-weight: bolder;"
+                    rowspan="2">Biriyani House</td>
+            </tr>
+            <tr>
+                <td>We undertake outdoor catering</td>
+            </tr>
+            <tr>
+                <td><img src="./Image/swiggy.jpg" class="image" />
+                    <img src="./Image/zomato.jpg" class="image" />
+                </td>
+            </tr>
+        </tbody>
+        </thead>
+    </table>
+    <hr>
+    <table align="center" style="width: 40%;height: 30%;">
+        <tbody>
+            <tr>
+                <td class="color">
+                    <div><a href="Menu.html">Menu</a></div>
+                    <div><a href="CustomerDetails.html">Customer Details</a></div>
+                    <div><a href="PlaceOrder.html">Place Order</a></div>
+                </td>
+                <td>
+                    <form action="OrderSuccessful.html" method="GET">
+                        <!-- Customer Details -->
+                        <div>
+                            <input readonly type="text" name="username" id="o_username" />
+                        </div>
+                        <div>
+                            <input readonly type="text" name="email" id="o_email" />
+                        </div>
+                        <div>
+                            <input readonly type="text" name="telephone" id="o_telephone" />
+                        </div>
+                        <div>
+                            <input readonly type="text" name="address" id="o_address" />
+                        </div>
+                        <!-- Place Order -->
+                        <div>
+                            <!-- Menu List -->
+                            <label for="fooditems">Food Items</label>
+                            <select name="fooditems" id="fooditems">
+                                <option value="select">--Select--</option>
+                                <option value="item_01">Chicken Biriyani</option>
+                                <option value="item_02">Mutton Biriyani</option>
+                                <option value="item_03">Biriyani Rice</option>
+                                <option value="item_04">Chicken Kshatriya Kabab</option>
+                                <option value="item_05">Chilli Chicken</option>
+                                <option value="item_06">Chicken Masala Fry</option>
+                                <option value="item_07">Chicken Pepper Dry</option>
+                                <option value="item_08">Chicken Lolipop</option>
+                                <option value="item_09">Chicken Chops</option>
+                                <option value="item_10">Mutton Chops</option>
+                                <option value="item_11">Mutton Pepper Dry</option>
+                                <option value="item_12">Kabab Biriyani Combo</option>
+                                <option value="item_13">Chilli Chicken Biriyani Combo</option>
+                                <option value="item_14">Lollipop Biriyani Combo</option>
+                                <option value="item_15">Chicken Combo</option>
+                                <option value="item_16">Mutton Combo</option>
+                            </select>
+                        </div>
+                        <!-- Half/Full-->
+                        <div>
+                            <label for="half">Half</label>
+                            <input type="radio" id="Half" />
+                            <label for="full">Full</label>
+                            <input type="radio" id="Full" />
+                        </div>
+                        <!-- Price  -->
+                        <div>
+                            <label for="amount">Amount</label>
+                            <input type="text" id="amount" name="amount" />
+                        </div>
+                        <div>
+                            <label for="payment">Mode Of Payment</label>
+                            <select name="payment" id="payment">
+                                <option value="select">--Select--</option>
+                                <option value="mode_01">UPI Transfer</option>
+                                <option value="mode_02">Cash On Delivery</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button type="submit">Place the order</button>
+                            <button type="reset">Clear</button>
+                        </div>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
