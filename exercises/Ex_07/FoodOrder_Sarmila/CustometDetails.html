@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,39 +8,36 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
 </head>
-
 <body>
-    <!-- code for hotel name and logo -->
-    <table align="center" style="width: 30%;background-color:#BAB86C">
+    <!--------------------------- code for hotel name and logo --------------------------------->
+    <table class="bannerAlign">
         <thead>
             <tr>
-                <td style="padding-right: 8px;padding-left:2px;">
-                    <img src="./Image/chefLogo.jpg" height="90px" width="90px"
-                        style="border-top-left-radius: 50%;border-bottom-right-radius: 50%;">
+                <td class="bannerImg">
+                    <img src="./Image/chefLogo.jpg" class="imgAlignment">
                 </td>
-                <td colspan="2" style="display: block;">
-                    <pre
-                        style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 20px;margin: 0px;text-align: center; margin-top: 7px;">Yum & Healthy Hotel </pre>
-                    <hr style="width: 210px;margin: 0px;margin-top: 10px;">
-                    <p style="font-family:Rockwell;text-align: center;font-size: 10px;"><strong>Robertson,
+                <td colspan="2" class="bannerName">
+                    <pre class="resName">Yum & Healthy Hotel </pre>
+                    <hr class="horLine">
+                    <p class="addressAlign"><strong>Robertson,
                             1234 NW Bobcat Lane,
                             St. Robert, MO 65584-5678</strong> </p>
                 <td>
-                    <img src="./Image/Yum.png" height="90px" width="90px"
-                        style="border-top-right-radius: 50%;border-bottom-left-radius: 50%;">
+                    <img src="./Image/Yum.png" class="imgAlignment">
                 </td>
             </tr>
         </thead>
     </table>
-    <hr width="30%">
-    <table align="center">
+    <hr class="width34">
+    <!--------------------------- navigation Menu --------------------------------->
+    <table class="tableAlignCenter">
         <tr>
             <td class="naviAlign">
                 <div><a href="MenuDesign.html">Menu</a></div>
                 <div><a href="CustometDetails.html">Customer detail</a></div>
                 <div><a href="placeOrder.html">Place order</a></div>
             </td>
-
+            <!--------------------------- Customer Information--------------------------------->
             <td>
                 <form action="placeOrder.html" method="GET" class="formAlign">
                     <table>
@@ -54,7 +50,6 @@
                                     maxlength="10" required>
                             </td>
                         </tr>
-
                         <tr>
                             <td>
                                 <label for="email">Email</label>
@@ -63,7 +58,6 @@
                                 <input type="email" id="email" name="email" placeholder="Enter Email">
                             </td>
                         </tr>
-
                         <tr>
                             <td>
                                 <label for="Tel">Telephone</label>
@@ -72,7 +66,6 @@
                                 <input type="tel" id="telephone" name="telephone" placeholder="Enter Telephone Number">
                             </td>
                         </tr>
-
                         <tr>
                             <td>
                                 <label for="address">Address</label>
@@ -82,17 +75,15 @@
                                     name="address">Enter Address Here...</textarea>
                             </td>
                         </tr>
-
                     </table>
+                    <!--------------------------- Submit and Reset button--------------------------------->
                     <div>
-                        <button type="submit" style="background-color: red;">Submit</button>
+                        <button type="submit" class="submitAlign">Submit</button>
                         <button type="reset" class="buttonclr">Reset</button>
                     </div>
                 </form>
             </td>
         </tr>
     </table>
-
 </body>
-
 </html>
