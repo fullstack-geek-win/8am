@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./Image/favicon.ico" />
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Document</title>
+    <script>
+        function fetchCustomerDetails() {
+            //QueryString & Parameters
+            var queryString = window.location.search;
+            var params = new URLSearchParams(queryString);
+
+            // Input Prameters
+            var UserNameInput = params.get("username");
+            var EmailInput = params.get("email");
+            var TelephoneInput = params.get("telephone");
+            var AddressInput = params.get("address");
+
+            //outputparameters
+            document.getElementById
+            var UserNameOutput = document.getElementById("o_username");
+            var EmailOutput = document.getElementById("o_email");
+            var TelephoneOutput = document.getElementById("o_telephone");
+            var AddressOutput = document.getElementById("o_address");
+
+            UserNameOutput.value = UserNameInput;
+            EmailOutput.value = EmailInput;
+            TelephoneOutput.value = TelephoneInput;
+            AddressOutput.value = AddressInput;
+        }
+    </script>
+</head>
+
+<body onload="fetchCustomerDetails()">
+    <!-- code for hotel name and logo -->
+    <table align="center" style="width: 30%;background-color:#BAB86C">
+        <thead>
+            <tr>
+                <td style="padding-right: 8px;padding-left:2px;">
+                    <img src="./Image/chefLogo.jpg" height="90px" width="90px"
+                        style="border-top-left-radius: 50%;border-bottom-right-radius: 50%;">
+                </td>
+                <td colspan="2" style="display: block;">
+                    <pre
+                        style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 20px;margin: 0px;text-align: center; margin-top: 7px;">Yum & Healthy Hotel </pre>
+                    <hr style="width: 210px;margin: 0px;margin-top: 10px;">
+                    <p style="font-family:Rockwell;text-align: center;font-size: 10px;"><strong>Robertson,
+                            1234 NW Bobcat Lane,
+                            St. Robert, MO 65584-5678</strong> </p>
+                <td>
+                    <img src="./Image/Yum.png" height="90px" width="90px"
+                        style="border-top-right-radius: 50%;border-bottom-left-radius: 50%;">
+                </td>
+            </tr>
+        </thead>
+    </table>
+    <hr width="30%">
+
+    <table align="center">
+        <tr>
+            <td class="navigation">
+                <div class="box"><a href="Menu.html">Menu</a></div><br>
+                <div class="box"><a href="CustomerDetails.html">Customer Details</a></div><br>
+                <div class="box"><a href="PlaceOrder.html">Place Order</a></div>
+            </td>
+            <td class="color">
+                <div>
+                    <!--Coustmer Details-->
+                    <div>
+                        <input readonly type="text" name="username" id="o_username">
+                    </div>
+                    <div>
+                        <input readonly type="text" name="email" id="o_email">
+                    </div>
+                    <div>
+                        <input readonly type="text" name="telephone" id="o_telephone">
+                    </div>
+                    <div>
+                        <input readonly type="text" name="address" id="o_address">
+                    </div>
+                    <!-- Place Order-->
+                    <div>
+                        <!-- Menu list-->
+                        <div>
+                            <div>
+                                <label for="FoodItems">FoodItems</label>
+                                <select name="foodItems" id="foodItems">
+                                    <option value="item_01">Chilli paneer gravy / dry</option>
+                                    <option value="item_02">Manchurian Gravy / dry</option>
+                                    <option value="item_03">Chilli Parota</option>
+                                    <option value="item_04">Honey chilli parota</option>
+                                    <option value="item_05">Veg noodles</option>
+                                    <option value="item_06">Hakka noodles</option>
+                                    <option value="item_07">Chilli garlic noodles</option>
+                                    <option value="item_08">Singapore noodles</option>
+                                    <option value="item_09">Chilli Chaap</option>
+                                    <option value="item_10">Chilli mushroom</option>
+                                    <option value="item_11">American veg chapsi</option>
+                                    <option value="item_12">Veg. fried rice</option>
+                                    <option value="item_13">Schezwan fry rice</option>
+                                    <option value="item_14">Manchap soup</option>
+                                    <option value="item_15">Hat & soes soup</option>
+                                    <option value="item_16">Tomato soup</option>
+                                    <option value="item_17">Veg momos</option>
+                                    <option value="item_18">Fried momos</option>
+                                </select>
+                            </div>
+                           <!-- Half/Full-->
+                        <div>
+                            <input type="radio" id="half" name="quantity">
+                            <label for="half">Half</label>
+                            <input type="radio" id="full" name="quantity">
+                            <label for="full">Full</label>
+                        </div>
+                            <!-- Price -->
+                            <label for="amount">Amount</label>
+                            <input type="text" id="amount" name="amount" required>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div align="center">
+        <button style="background-color: cornflowerblue;" type="submit"><a href="SucessfulOrder.html"><strong>Submit</strong></a></button>
+      </div>
+</body>
+
+</html>

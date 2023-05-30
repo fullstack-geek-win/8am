@@ -1,0 +1,42 @@
+/* Global styling for menucard */
+.menuCard{ 
+ /*width: 30%;*/
+    border: 2px;
+    padding: 15px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+}
+.foodItems{
+    font-family: cursive;
+    font-size: 12px;
+    padding-left: 30px;
+}
+.halfPrice{
+    padding-left: 20px;
+    width: 30px;
+}
+td{
+    vertical-align: top;
+}
+div button{
+    background-color:brown;
+}
+.navigation{
+    vertical-align:auto;
+    background-color:rgb(237, 193, 136);
+    text-align: center;
+    padding: 12px;
+}
+.color{
+    vertical-align:auto;
+    background-color:rgb(252, 217, 175);
+    text-align: center;
+    padding: 12px;
+}
+.box{
+    width: auto;
+    border: 1px none black ;
+    padding: auto;
+   background-color: rgba(250, 235, 215, 0.906);
+   border-radius: 5px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+   <!-- code for hotel name and logo -->
+   <table align="center" style="width: 30%;background-color:#BAB86C">
+    <thead>
+        <tr > 
+            <td style="padding-right: 8px;padding-left:2px;">
+                <img src="./image/chefLogo.jpg" height="90px" width="90px" style="border-top-left-radius: 50%;border-bottom-right-radius: 50%;">
+            </td>
+            <td colspan="2" style="display: block;">
+                <pre style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 20px;margin: 0px;text-align: center; margin-top: 7px;">Yum & Healthy Hotel </pre>
+                <hr style="width: 210px;margin: 0px;margin-top: 10px;"> 
+                <p style="font-family:Rockwell;text-align: center;font-size: 10px;"><strong>Robertson, 
+                    1234 NW Bobcat Lane, 
+                    St. Robert, MO 65584-5678</strong> </p>
+            <td>
+                <img src="./image/Yum.png" height="90px" width="90px" style="border-top-right-radius: 50%;border-bottom-left-radius: 50%;">
+            </td>       
+        </tr>
+    </thead>
+</table>
+<hr width="30%">
+
+  <form action="PlaceOrder.html" method="get">
+    <table align="center">
+      <tr>
+          <td class="navigation">
+            <div class="box"><a href="Menu.html">Menu</a></div><br>
+            <div class="box"><a href="CustomerDetails.html">Customer Details</a></div><br>
+            <div class="box"><a href="PlaceOrder.html">Place Order</a></div>
+          </td>
+          <td class="color">
+    <div>
+      <label for="username">Username</label>
+      <input id="username"
+        name="username" 
+        placeholder="Enter your UserName" 
+        minlength="5" 
+        maxlength="10" 
+        required />
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input 
+       type="email" 
+       id="email" 
+       name="email" 
+       placeholder="Enter ur Email ID" />
+    </div>
+    <div>
+      <label for="telephone">Telephone</label>
+      <input type="tel" 
+       id="telephone" 
+       name="telephone" 
+       placeholder="Enter ur Telephone number" />
+    </div>
+    <div>
+      <label for="address">Address</label>
+      <textarea name="address" id="" cols="15" rows="2">
+Enter Address Here...
+        </textarea>
+    </div>
+  </dl>
+    <div>
+      <button type="submit">Submit</button>
+      <button type="reset">Clear</button>
+    </div>
+  </td>
+</table>
+  </form>
+</body>
+
+</html>
