@@ -1,0 +1,39 @@
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+hr {
+    color: black; size: 5;background-color: blueviolet;
+}
+
+body {
+    background-color:navajowhite;
+}
+
+tr,
+td {
+    border: 2px solid blueviolet;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    background-color: greenyellow;
+    text-align: center;
+    font-size:medium;
+}
+
+.style {
+    font-weight: bolder;
+}
+.color{background-color: powderblue;}
