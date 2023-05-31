@@ -1,0 +1,44 @@
+/* .menuCard{ 
+    width:550px;
+    background-color: beige;
+    border: 3px;
+    padding-bottom: 0px;
+    height: 420px;
+    margin-left: 210px;
+} */
+.foodItems{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.price{
+    padding-left: 40px;
+    width: 30px;
+}
+td {
+    vertical-align: top;
+}
+div button {
+    background-color: brown;
+}
+.inputs{
+    margin-left: 600px;
+    margin-top: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.menuLink{
+    background-color:beige;
+}
+.nav{
+    background-color: beige;
+}
+.fillup{
+    background-color: aquamarine;
+}
+    
+
+/* .menu-links{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color:beige;
+    width:200px;
+} */

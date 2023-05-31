@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    <script>
+        function FetchCustomerDetails() {
+            var queryString = window.location.search;
+            var params = new URLSearchParams (queryString);
+            // Input parameters
+            var UserNameInput = params.get("username");
+            var EmailInput = params.get("email");
+            var TelephoneInput = params.get("telephone");
+            var AddressInput = params.get("address")
+            // Output parameters
+            var UserNameOutput = document.getElementById("O_username");
+            var EmailOutput = document.getElementById("O_email");
+            var TelephoneOutput = document.getElementById("O_telephone");
+            var AddressOutput = document.getElementById("O_address")
+
+            UserNameOutput.value = UserNameInput;
+            EmailOutput.value = EmailInput;
+            TelephoneOutput.value = TelephoneInput;
+            AddressOutput.value = AddressInput;
+
+        }
+    </script>
+</head>
+<body onload="FetchCustomerDetails()">
+    <table align="center" style="width: 40%; background-color: beige">
+        <tr>
+            <td><img src="./Images/spork.jpg" height="150px" width="150px" style="border-radius: 3px;"></td>
+            <td>
+                <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center;">Forks & Spoons</h1>
+                <hr style="width: 290px;margin: 0px;">
+                <p style="font-family:cursive; text-align: center;">
+                Block - 211, Cunning street,
+                Galaxy Avenue, BTM Layout,
+                Banglore - 823001.
+                </p>
+           </td>
+            <td align="right"><img src="./Images/chef.jpg" height="150px" width="150px" style="border-radius: 3px;"></td>
+        </tr>
+    </table>
+    <hr width="40%">
+    <table class="inputs">
+        <tr>
+            <td class="nav">
+                <div><a href="Menu.html">Menu</a></div>
+                <div><a href="CustomerDetails.html">Customer Details</a></div>
+                <div><a href="PlaceOrder.html">Place Order</a></div>
+            </td>
+            <td class="fillup">
+                <form action="Thanks.html" method="GET">
+    <div>
+        <!--Customer Details-->
+        <div>
+            <input readonly type="text" name="username" id="O_username">
+        </div>
+        <div>
+            <input readonly type="text" name="email" id="O_email">
+        </div>
+        <div>
+            <input readonly type="text" name="telephone" id="O_telephone">
+        </div>
+        <div>
+            <input readonly type="text" name="address" id="O_address">
+        </div>
+        <div>
+            <div>
+            <label for="foodItems">Food Items</label>
+            <select name="foodItems" id="foodItems">
+                <option value="item_01">Chilli paneer gravy</option>
+                <option value="item_02">Manchurain gravy</option>
+                <option value="item_03">Chilli Parota</option>
+                <option value="item_04">Honey chilli parota</option>
+                <option value="item_05">Veg Noodles</option>
+            </select>
+        </div>
+        <div>
+            <!--Half/Full-->
+            <input type="radio" id="half" name="quantity">
+            <label for="half">Half</label>
+            <input type="radio" id="full" name="quantity">
+            <label for="full">Full</label>
+        </div>
+        <div>
+            <label for="amount">Amount</label>
+            <input type="text" id="amount" name="amount">
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+        </div>
+    </div>
+</form>
+    </td>
+    </tr>
+    </table>
+</body>
+</html>

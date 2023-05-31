@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <table align="center" style="width: 40%; background-color: beige">
+        <tr>
+            <td><img src="./Images/spork.jpg" height="150px" width="150px" style="border-radius: 3px;"></td>
+            <td>
+                <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center;">Forks & Spoons</h1>
+                <hr style="width: 290px;margin: 0px;">
+                <p style="font-family:cursive; text-align: center;">
+                Block - 211, Cunning street,
+                Galaxy Avenue, BTM Layout,
+                Banglore - 823001.
+                </p>
+           </td>
+            <td align="right"><img src="./Images/chef.jpg" height="150px" width="150px" style="border-radius: 3px;"></td>
+        </tr>
+    </table>
+    <hr width="40%">
+    <form action="./PlaceOrder.html" method="GET">
+        <table class="inputs">
+            <tr>
+                <td class="nav">
+                    <div><a href="Menu.html">Menu</a></div>
+                    <div><a href="CustomerDetails.html">Customer Details</a></div>
+                    <div><a href="PlaceOrder.html">Place Order</a></div>
+                </td>
+                <td class="fillup">
+        <div>
+            <label for="username">Username</label>
+            <input
+            id="username"
+            name="username"
+            placeholder="Enter Username"
+            minlength="5"
+            maxlength="10"
+            required 
+            />
+        </div>
+        <div>
+           <label for="email">Email</label>
+           <input type="email" id="email" name="email"
+           placeholder="Enter Email ID" />
+        </div>
+        <div>
+            <label for="telephone">Telephone</label>
+            <input type="tel" id="telephone" name="telephone"
+            placeholder="Enter Telephone Number" />
+        </div>
+        <div>
+            <label for="address">Address</label>
+            <textarea name="address" id="address" cols="15" rows="5" placeholder="Enter address here"></textarea>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </div>
+        </td>
+        </tr>
+        </table>
+    </form>
+</body>
+</html>
