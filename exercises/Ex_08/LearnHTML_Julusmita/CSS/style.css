@@ -1,0 +1,27 @@
+.table {
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px none white;
+    background-color:rgb(202, 196, 187);
+    height: 300px;
+    width: 160px;
+
+}
+
+.table2 {
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px none white;
+    background-color:rgb(250, 214, 169);
+    height: 300px;
+    width: 300px;
+}
+
+.box {
+    width: auto;
+    border: 1px none black;
+    padding: auto;
+    background-color: rgba(216, 184, 143, 0.906);
+    border-radius: 5px;
+    text-align: center;
+}

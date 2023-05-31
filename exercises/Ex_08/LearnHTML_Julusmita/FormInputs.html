@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS Input Elements</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: bisque;
+        }
+        h1{
+            text-align: center;
+            color: rgb(12, 12, 147);
+        }
+        h2{
+            text-align: center;
+            color: rgb(109, 20, 20);
+        }
+
+        .classstyle {
+            color: brown;
+            font-family: cursive;
+            font-size: large;
+        }
+
+        #idstyle {
+            color: blueviolet;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: large;
+        }
+
+        .hr {
+            border-top: 2px rgb(200, 17, 136);
+            width: 100%;
+            text-align: left;
+            margin-left: 0;
+        }
+
+        .table {
+            border: 2px none white;
+            background-color: rgb(202, 196, 187);
+            width: auto;
+            height: auto;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML Learn</h1>
+    <hr>
+    <table>
+        <tr>
+            <td class="table">
+                <div class="box"><a href="./Index.html">Index</a></div><br>
+                <div class="box"><a href="./Struct_symantic.html">Structure & Symentic</a></div><br>
+                <div class="box"><a href="./Table.html">Table tag</a></div><br>
+                <div class="box"><a href="./FormInputs.html">Forms & Inputs</a></div><br>
+                <div class="box"><a href="./HtmlStructure_list.html">HTML Structure & Lists</a></div><br>
+                </ul>
+            </td>
+            <td class="table">
+                <table>
+                    <h2>Form Input Elements</h2>
+                    <hr>
+                    <div class="classstyle">
+                        You want to stylize one element different than other elements use class Attribute.
+                    </div>
+                    <hr class="hr">
+                    <div id="idstyle">
+                        This is the div tag and id Attribute works same as class Attribute.
+                    </div>
+                    <hr class="hr">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                    <hr class="hr">
+                    <div>
+                        <label for="fav-language">fav-language:</label>
+                        <select name="fav-language" id="fav-language">
+                            <option value="select">Select</option>
+                            <option value="hindi">HTML</option>
+                            <option value="tamil">CSS</option>
+                            <option value="English">Javascript</option>
+                        </select>
+                    </div>
+                    <hr class="hr">
+                    <div>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" value="Suchismita"
+                            placeholder="Plz Enter ur name" minlength="5" maxlength="15" required>
+                    </div>
+                    <hr class="hr">
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Plz Enter ur password">
+                    </div>
+                    <hr class="hr">
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter ur Email ID">
+                    </div>
+                    <hr class="hr">
+                    <div>
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" placeholder="Plz enter ur age" minlength="1"
+                            maxlength="3" step="2">
+                    </div>
+                    <hr class="hr">
+                    <div>
+                        <label for="address">Address:</label>
+                        <textarea name="address" id="address" cols="15" rows="3">
+Enter Address here...
+        </textarea>
+                    </div>
+                    <hr class="hr">
+                    <div>
+                        <input type="checkbox" id="a" name="a">
+                        <label for="a">Trainer</label><br>
+                        <input type="checkbox" id="a" name="a">
+                        <label for="a">IT Profession</label>
+                    </div>
+                    <hr class="hr">
+                    <div>
+                        <input type="radio" id="gender" name="gender">
+                        <label for="gender">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="gender" name="gender">
+                        <label for="gender">Female</label>
+                    </div>
+                    <hr class="hr">
+                    <div>
+                        <input type="file">
+                    </div>
+                    <hr class="hr">
+                    <div>
+                        <input type="hidden" id="custID" name="custID" value="3487">
+                    </div>
+                    <hr class="hr">
+                    <div>
+                        <label for="telephone">Telephone</label>
+                        <input type="tel" id="telephone" name="telephone" placeholder="Enter ur phone number">
+                    </div>
+                    <hr class="hr">
+                    <div>
+                        <label for="favcolor">Color</label>
+                        <input type="color" id="favcolor" name="favcolor">
+                    </div>
+                    <hr class="hr">
+                    <label for="language">Select a Language:</label>
+                    <select name="language" id="language">
+                        <option value="select">Select</option>
+                        <option value="hindi">Hindi</option>
+                        <option value="tamil">Tamil</option>
+                        <option value="English">English</option>
+                    </select>
+                    <hr class="hr">
+                    <div>
+                        <img src="./img/avatar.jpg" alt="" height="60px" width="60px">
+                    </div>
+                    <hr class="hr">
+                    <form action="Get.html" method="get">
+                        <div>
+                            <label for="username">Username</label>
+                            <input id="username" name="username" placeholder="Enter your UserName" minlength="5"
+                                maxlength="10" required />
+                        </div>
+                        <div>
+                            <label for="e">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter ur Email ID">
+                        </div>
+                        <div>
+                            <label for="telephone">Telephone</label>
+                            <input type="tel" id="telephone" name="telephone" placeholder="Enter ur Telephone number" />
+                        </div>
+                        <div>
+                            <button type="submit">GET</button>
+                        </div>
+
+                    </form>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
