@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./Image/favicon.ico" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+    <script>
+        function fetchCustomerDetails() {
+            //QueryString & Parameters
+            var queryString = window.location.search;
+            var params = new URLSearchParams(queryString);
+
+            // Input Prameters
+            var UserNameInput = params.get("username");
+            var EmailInput = params.get("email");
+            var TelephoneInput = params.get("telephone");
+            var AddressInput = params.get("address");
+
+            //outputparameters
+            document.getElementById
+            var UserNameOutput = document.getElementById("o_username");
+            var EmailOutput = document.getElementById("o_email");
+            var TelephoneOutput = document.getElementById("o_telephone");
+            var AddressOutput = document.getElementById("o_address");
+
+            UserNameOutput.value = UserNameInput;
+            EmailOutput.value = EmailInput;
+            TelephoneOutput.value = TelephoneInput;
+            AddressOutput.value = AddressInput;
+        }
+    </script>
+</head>
+<body onload="fetchCustomerDetails()">
+    <!------------------------ code for hotel name and logo -------------------->
+    <table class="bannerAlign">
+        <thead>
+            <tr>
+                <td class="bannerImg">
+                    <img src="./image/chef.jpg" class="imgAlignment">
+                </td>
+                <td colspan="2" class="bannerName">
+                    <pre class="resName">Yum & Healthy Hotel </pre>
+                    <hr class="horLine">
+                    <p class="addressAlign"><strong>Robertson,
+                            1234 NW Bobcat Lane,
+                            St. Robert, MO 65584-5678</strong> </p>
+                <td>
+                    <img src="./image/yum.jpg" class="imgAlignment">
+                </td>
+            </tr>
+        </thead>
+    </table>
+    <hr class="width34">
+    <!-------------------- Navigation menu ------------------->
+    <table class="tableAlignCenter">
+        <tr>
+            <td class="naviAlign">
+                <div><a href="MenuDesign.html">Menu</a></div>
+                <div><a href="CustomerDetails.html">Customer detail</a></div>
+                <div><a href="placeOrder.html">Place order</a></div>
+            </td>
+            <td>
+                <div class="customerDetailDiv">
+                    <!-------------------- Cusomer details ------------------->
+                    <div>
+                        <div class="alignCenter">Customer Details</div>
+                    </div>
+                    <table class="alignCenter">
+                        <tr>
+                            <td>
+                                <input readonly type="text" name="username" id="o_username" class="disablegrey">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input readonly type="text" name="email" id="o_email" class="disablegrey">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input readonly type="text" name="telephone" id="o_telephone" class="disablegrey">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input readonly type="text" name="address" id="o_address" class="disablegrey">
+                            </td>
+                        </tr>
+                        <!-------------------- Food Item div ------------------->
+                        <tr class="foodItemBackColor">
+                            <td class="foodItemBorder">
+                                <div class="foodItemPaddingAlign">
+                                    <label for="foodItems">Food Items</label>
+                                    <select name="foodItems" id="foodItems">
+                                        <option value="item_01">Chilli Paneer Gravy / Dry</option>
+                                        <option value="item_02">mangurian gravy</option>
+                                        <option value="item_03">Chilli Parota</option>
+                                        <option value="item_04">Honey Chilli Parota</option>
+                                        <option value="item_05">Veg Noodles</option>
+                                        <option value="item_06">Hakka Noodles</option>
+                                    </select>
+                                    <!-------------------- Half / Full Radio ------------------->
+                                    <div class="halfFullRadio">
+                                        <input type="radio" id="half" name="quantity">Half
+                                        <label for="half"></label>
+                                        <input type="radio" id="full" name="quantity">Full
+                                        <label for="full"></label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-------------------- Total Amount div ------------------->
+                            <td class="amtDiv">
+                                <div class="marg10">
+                                    <label for="amount">Total Amount</label>
+                                    <input type="text" id="amount" name="amount" required>
+                                    <div class="marg10">
+                                        <button class="submitAlign" type="submit"><a
+                                                href="./orderSuccess.html">Submit</a></button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

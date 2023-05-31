@@ -1,0 +1,164 @@
+/* Global styling for Food order project */
+
+.menuCard {
+    /* width: 30%; */
+    border: 2px;
+    padding: 15px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+    background-color: #fdcd59;
+    margin-left: auto;
+    margin-right: auto;
+}
+.foodItems {
+    font-family: cursive;
+    font-size: 12px;
+    padding-left: 30px;
+}
+.halfPrice {
+    padding-left: 20px;
+    width: 30px;
+    text-align: left;
+    font-size: 11px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+
+}
+.halfFullTitle {
+    text-align: left;
+    font-size: 12px;
+    font-family: system-ui;
+    color: crimson;
+}
+div button {
+    background-color: aliceblue;
+}
+.naviAlign {
+    vertical-align: auto;
+    background-color: darksalmon;
+    text-align: center;
+    padding: 12px;
+}
+.formAlign {
+    padding: 15px;
+    background-color: #fdcd59;
+}
+body {
+    background-color: #a67b5b;
+}
+.bannerAlign {
+    width: 30%;
+    background-color: #BAB86C;
+    margin-left: auto;
+    margin-right: auto;
+}
+.width34 {
+    width: 34%;
+}
+.bannerImg {
+    padding-right: 8px;
+    padding-left: 2px;
+}
+.imgAlignment {
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 90px;
+    width: 90px;
+}
+.bannerName {
+    display: block;
+}
+.resName {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    text-align: center;
+    margin-top: 7px;
+}
+.horLine {
+    width: 210px;
+    margin: 0px;
+    margin-top: 10px;
+}
+.addressAlign {
+    font-family: Rockwell;
+    text-align: center;
+    font-size: 10px;
+}
+.tableAlignCenter {
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+.paddLeft25 {
+    padding-left: 25px;
+}
+.foodTitleAlign {
+    text-align: left;
+    background-color: crimson;
+    padding: 2px;
+    color: aliceblue;
+    font-size: 20px;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.menuFoodPics {
+    background-color: #fdcd59;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1px;
+}
+.heightWidth75 {
+    height: 78px;
+    width: 82px;
+}
+.customerDetailDiv {
+    background-color: #fdcd59;
+    padding: 15px;
+    text-align: center;
+}
+.alignCenter {
+    margin-left: auto;
+    margin-right: auto;
+}
+.disablegrey {
+    background-color: #D3D3D3;
+}
+.foodItemBackColor {
+    background-color: lightsteelblue;
+}
+.foodItemBorder {
+    border: 1px solid black;
+}
+.foodItemPaddingAlign {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 3px;
+    padding-left: 2px;
+}
+.halfFullRadio {
+    margin-top: 10px;
+}
+.marg10 {
+    margin-top: 10px;
+}
+.submitAlign {
+    background-color: aliceblue;
+    color: black;
+}
+.amtDiv {
+    background-color: #E1AEAD;
+    padding: 5px;
+    border: 1px solid black;
+}
+.resultPage {
+    background-color: darkgoldenrod;
+    margin: 22%;
+    text-align: center;
+    font-size: 27px;
+}
+.successfullMsg {
+    margin-top: auto;
+    margin-bottom: auto;
+}
