@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function FetchCustomerDetails(){
+            var queryString = window.location.search;
+            var params = new URLSearchParams(queryString);
+           
+            // Input parameters
+            var UserNameInput = params.get("user1");
+            var EmailInput = params.get("email");
+            var telephoneInput = params.get("telephone");
+            var AddressInput = params.get("address");
+
+            //Output parameters
+           
+            var UserNameOutput =  document.getElementById("O_user1");
+            var EmailOutput =  document.getElementById("O_email");
+            var telephoneOutput =  document.getElementById("O_telephone");
+            var AddressOutput =  document.getElementById("O_address");
+
+            UserNameOutput.value =  UserNameInput;
+            EmailOutput.value = EmailInput;
+            TelephoneInput.value = TelephoneInput;
+            AddressInput.value = AddressInput;
+
+
+        }
+
+
+    </script>
+</head>
+<body onlode="FetchCustomerDetails()">
+    <!--code for hotel name and logo -->
+    <table align="center" style="width: 30%;background-color:#BAB86C">
+        <thead>
+            <tr > 
+                <td style="padding-right: 8px;padding-left:2px;">
+                    <img src="./Image/chefLogo.jpg" height="90px" width="90px" style="border-top-left-radius: 50%;border-bottom-right-radius: 50%;">
+                </td>
+                <td colspan="2" style="display: block;">
+                    <pre style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 20px;margin: 0px;text-align: center; margin-top: 7px;">Yum & Healthy Hotel </pre>
+                    <hr style="width: 210px;margin: 0px;margin-top: 10px;"> 
+                    <p style="font-family:Rockwell;text-align: center;font-size: 10px;"><strong>Robertson, 
+                        1234 NW Bobcat Lane, 
+                        St. Robert, MO 65584-5678</strong> </p>
+                <td>
+                    <img src="./Image/Yum.png" height="90px" width="90px" style="border-top-right-radius: 50%;border-bottom-left-radius: 50%;">
+                </td>       
+            </tr>
+        </thead>
+    </table>
+    <hr width="30%">
+    <!--navigation & main page-->
+    <table>
+        <tr>
+            <td>
+               <div><a href="./Menu.html">menu</a></div>
+               <div><a href="./CustomerDetails.html">customer details</a></div>
+               <div><a href="./PlaceOrder.html">place order</a></div>
+            </td>
+        </tr>
+    </table>
+    <div>
+    <!----customer details--->
+</div>
+<div>
+    <input readonly type="'text" name="user1" id="O_username">
+</div>
+<div>
+    <input readonly type="'text" name="email" id="O_email">
+</div>
+<div>
+    <input readonly type="'text" name="telephone" id="O_telephone">
+</div>
+<div>
+    <input readonly type="'text" name="address" id="O_address">
+</div>
+
+    <table align="center" style="background-color: #BAB86C;">
+        <tr>
+            <td>
+                
+    place order
+    <div>
+  
+    <!--menu list-->
+    <label for="fooditems">food items</label >
+    <select name ="foodItems" id="foodItems">
+        <option value="item_01">chilli paneer gravy</option>
+        <option value="item_02"> manchutiya gravy</option>
+        <option value="item_04">chilli parato</option>
+        <option value="item_05">honey chilli paroto</option>
+        <option value="item_06">veg noodles</option>
+        <option value="item_07">Hakka noodles</option>
+        <option value="item_08">Chilli garlic noodles</option>
+        <option value="item_09">Singapore noodles</option>
+        <option value="item_10">Chilli Chaap</option>
+        <option value="item_11">Chilli mushroom</option>
+        <option value="item_12">American veg chapsi</option>
+        <option value="item_13">Veg. fried rice</option>
+        <option value="item_14">Schezwan fry rice</option>
+        <option value="item_15">Manchap soup</option>
+        <option value="item_16">Hat & soes soup</option>
+        <option value="item_17">Tomato soup</option>
+        <option value="item_18">Veg momos</option>
+        <option value="item_19">Fried momos</option>
+</div>    
+    <!---half/full -->
+    <div>
+    <input type="radio" id="half" name="quantity">
+    <label for="half">half</label>
+    <input type="radio" id="half" name="quantity">
+    <label for="full">full</label>
+    <!--price-->
+
+        <div>
+      
+        <label for ="amount" type="button"> amount</label> 
+        <input tupr="text" id="amount"  name="amount">
+     </div>
+</td>
+
+        </tr>
+      
+    </table>
+</body>
+</html>
+
+
+
