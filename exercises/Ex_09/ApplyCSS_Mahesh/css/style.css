@@ -1,0 +1,51 @@
+* {
+
+    font-style: italic;
+    text-align: center;
+}
+h1{color: white;}
+h2{color:snow;}
+
+body {
+    background-image: url('../image/backgroudimage.jpg');
+    margin: 30px;
+    background-size: 3000px;
+}
+
+a {
+    text-decoration:wavy;
+    margin-right: 40px;
+    font-size: large;
+    color: antiquewhite;
+    background-color:darkblue;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+a:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+table {
+    margin-left: auto;margin-right: auto;
+    width: 30%;
+}
+
+thead {
+    font-weight: bolder;
+    background-color:lavenderblush;
+    color: black;
+}
+tbody{background-color:azure;}
+
+tr,
+td {
+    border: 2px solid blueviolet;
+    margin: 5px;
+    text-align: center;
+    font-size: medium;
+    font-style: normal;
+    border-radius: 5px;
+}
+
