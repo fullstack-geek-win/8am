@@ -1,0 +1,30 @@
+
+body{
+    background-color: rgb(223, 166, 238);
+    background-image: url(./image1.jpg);
+    background-size: 1000px;
+
+    background-repeat: no-repeat;
+}
+table, tr, td {
+    font-size:x-small;
+    padding:9px;
+    margin: 2px;
+    border: 2px solid greenyellow;
+    margin-left: auto;
+    margin-right:auto;
+    border-radius: 5px;
+    }
+    thead tr{
+        background-color: honeydew;
+    }
+    tbody{
+        background-color: beige;
+    }
+    a{
+        text-decoration: none;
+        background-color: lavenderblush;
+        border-radius: 10px;
+    
+    
+    }
