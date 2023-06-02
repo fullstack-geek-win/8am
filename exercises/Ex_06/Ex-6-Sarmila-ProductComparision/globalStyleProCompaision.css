@@ -1,0 +1,117 @@
+/* external css for product comparision */
+p,
+div.answer {
+    background-color: burlywood;
+}
+
+img {
+    height: 150px;
+    width: 130px;
+}
+
+.mainTable {
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #A1A1A1;
+    width: 80%;
+    background-color: black;
+}
+
+td {
+    border: 1px solid white;
+    border: 1px solid #A1A1A1;
+}
+
+.noBorder {
+    border: 0px;
+}
+
+.ratingSize {
+    height: 15%;
+    border: 0px;
+    border: 0px;
+}
+
+span {
+    position: absolute;
+    margin-top: 15px;
+}
+
+pre {
+    margin: 0%;
+    padding-left: 13px;
+}
+
+#alignCenter {
+    padding-left: 15px;
+}
+
+body {
+    margin: 0px;
+}
+
+h2 {
+    text-align: center;
+    background-color: #D1FFBD;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+hr {
+    margin-top: 0px;
+}
+
+.productHeader {
+    text-align: center;
+}
+
+.productSubHeader {
+    text-align: left;
+    font-size: 20px;
+    padding: 5px;
+    background-color: #F0E68C;
+    font-family: fangsong;
+    color: #8B0000;
+}
+
+.productSpecification {
+    padding-left: 10px;
+}
+
+tr.backColor {
+    background-color: #D3FCFF;
+}
+
+.subheader {
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: Times New Roman;
+}
+
+.mobName {
+    font-size: large;
+}
+
+.priceInfo {
+    color: red;
+}
+
+.priceSize {
+    font-size: x-large;
+}
+
+.viewedUser {
+    font-size: small;
+}
+
+.addtoCart {
+    background-color: #90EE90;
+    margin-left: 10px;
+    padding: 3px;
+}
+
+.mediumSize {
+    font-size: medium;
+}
