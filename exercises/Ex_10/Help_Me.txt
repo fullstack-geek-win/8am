@@ -1,0 +1,7 @@
+HTML/CSS
+========
+Layout Exercise
+
+1. Create Layout
+2. Add images in Ads Layer
+3. Insert Background image
