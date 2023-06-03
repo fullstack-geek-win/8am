@@ -1,0 +1,89 @@
+body {
+    background-color: #ffbdc9;
+}
+.indexbody {
+    margin-top: 150px;
+}
+.index {
+    margin: 100px;
+    border: 1px solid black;
+}
+.hr {
+    border: 1px solid black;
+}
+.maincon {
+    background: #fff;
+    border-radius: 50px;
+    padding: 10px;
+    display: inline-block;
+    font-size: 20px;
+}
+.tab1 {
+    margin-top: 10px;
+    display: block;
+    float: left;
+    margin-left: 150px;
+    max-height: 400px;
+    overflow-y: scroll;
+    
+}
+.thead1 {
+    background-color: rgb(30, 25, 25);
+    color: azure;
+    position: sticky;
+    top: 0px;
+}
+.tab2 {
+    margin-top: 10px;
+    margin-right: 150px;
+    display: block;
+    float: right;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+.thead2 {
+    background-color: rgb(30, 25, 25);
+    color: azure;
+    position: sticky;
+    top: 0px;
+}
+.container {
+    margin-top: 50px;
+    background: #fff;
+    border-radius: 50px;
+    padding: 10px;
+    display: inline-block;
+    font-size: 20px;
+}
+.maincon1 {
+    margin-top: 35px;
+    display: flex;
+    text-align: justify;
+    gap: 1em;
+    font-family: monospace;
+    font-size: large;
+}
+.box {
+    padding: 10px;
+    border: 2px solid black;
+    font-family: monospace;
+}
+.box:nth-child(1) {
+    align-self: flex-start ;
+}
+.box:nth-child(2) {
+    flex-grow: 1;
+}
+.box:nth-child(3) {
+    align-self: flex-end;
+}
+a {
+    padding: 5px;
+    cursor: pointer;
+    font-family: monospace;
+    color: black;
+}
+a:link,a:hover {
+    text-decoration: none;
+    color: hotpink;
+}
