@@ -1,0 +1,82 @@
+body {
+    background-color: bisque;
+    background-image: url(./img/Login-Final-Background.png);
+    color:white;
+}
+
+
+.MainContainer {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: 4px solid white;
+    display: flex;
+    justify-content: space-between;
+    background-color:transparent;
+    font-family:'Courier New', Courier, monospace;
+
+}
+
+
+.SubContainer1 {
+    width: 30%;
+    margin: 10px
+}
+
+.SubContainer2 {
+    width: 30%;
+    border-left: 2px solid white;
+    padding: 10px;
+
+
+}
+
+.order {
+    width: 30%;
+    border: 4px solid white;
+    padding: 10px;
+  
+}
+
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.link {
+    width: 30%;
+    border: 4px solid white;
+    padding: 10px;
+    text-decoration: underline;
+    display: flex;
+}
+
+.customerDetail {
+   margin: auto;
+}
+
+.fooditemsbox {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    border: 2px solid white;
+    background-color: transparent;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    
+
+}
+.Nav{
+     margin:auto; 
+     font-size: xx-large;
+}
+a{
+    color:white;
+}
+a:hover{
+    color:red;
+}
+.success{
+    text-align: center;
+    
+}

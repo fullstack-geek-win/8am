@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <title>CustomerDetails.html</title>
+</head>
+
+<body>
+    <!-- code for hotel name and logo -->
+    <div class="MainContainer">
+        <div class="link" align="center">
+            <div class="Nav">
+
+                <div><a href="menudesign.html">Menu</a></div><br>
+                <div><a href="CustomerDetails.html">Customer Details</a></div><br>
+                <div><a href="PlaceOrder.html">Place Order</a></div>
+            </div>
+        </div>
+        <hr>
+        <div class="SubContainer1">
+            <div align="center"><img src="./img/DV1044-S15-S-xl.png" height=260px;></div>
+        </div>
+        <hr>
+        <table>
+
+            <!--------------------------- Customer Information--------------------------------->
+            <tr>
+                <td>
+                    <form action="PlaceOrder.html" method="GET">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="username">Username</label>
+                                </td>
+                                <td>
+                                    <input id="username" name="username" placeholder="Enter your name" minlength="2"
+                                        maxlength="10" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="email">Email</label>
+                                </td>
+                                <td>
+                                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="Tel">Telephone</label>
+                                </td>
+                                <td>
+                                    <input type="tel" id="telephone" name="telephone"
+                                        placeholder="Enter Telephone Number">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="address">Address</label>
+                                </td>
+                                <td>
+                                    <textarea type="text" id="address" cols="15" row="5"
+                                        name="address" placeholder="Enter your address"></textarea>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--------------------------- Submit and Reset button--------------------------------->
+                        <div>
+                            <button type="submit">Submit</button>
+                            <button type="reset">Reset</button>
+                        </div>
+                    </form>
+                </td>
+            </tr>
+        </table>
+</div>
+</body>
+
+</html>

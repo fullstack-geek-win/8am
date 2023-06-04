@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+
+  
+   <script>
+    function fetchCustomerDetails() {
+    //QueryString & Parameters
+    
+    var queryString = window.location.search;
+    var params = new URLSearchParams(queryString);
+   
+
+    // Input Prameters
+    var UserNameInput = params.get("username");
+    var EmailInput = params.get("email");
+    var TelephoneInput = params.get("telephone");
+    var AddressInput = params.get("address");
+
+    //outputparameters
+    
+    var UserNameOutput = document.getElementById("o_username");
+    var EmailOutput = document.getElementById("o_email");
+    var TelephoneOutput = document.getElementById("o_telephone");
+    var AddressOutput = document.getElementById("o_address");
+
+    UserNameOutput.value = UserNameInput;
+    EmailOutput.value = EmailInput;
+    TelephoneOutput.value = TelephoneInput;
+    AddressOutput.value = AddressInput;
+}
+</script>
+</head>
+<body onload="FetchCustomerDetails()">
+    <div class="MainContainer">
+        <div class="link" align="center">
+            <div class="Nav">
+
+                <div><a href="menudesign.html">Menu</a></div><br>
+                <div><a href="CustomerDetails.html">Customer Details</a></div><br>
+                <div><a href="PlaceOrder.html">Place Order</a></div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="SubContainer1">
+            <div align="center"><img src="./img/DV1044-S15-S-xl.png" height=260px;></div>
+        </div>
+        <hr>
+         <div class="customerDetail">
+            <!-------------------- Cusomer details ------------------->
+            <div>
+                <div>Customer Details</div>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        <input readonly type="text" name="username" id="o_username">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input readonly type="text" name="email" id="o_email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input readonly type="text" name="telephone" id="o_telephone">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input readonly type="text" name="address" id="o_address">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+    <br>
+
+    <div class="fooditemsbox">
+        <table>
+            <tr>
+                <td>
+                    <div>
+                        <label for="foodItems">Food Items</label>
+                        <select name="foodItems" id="foodItems">
+                            <option value="item_01">Grilled Fingerlings</option>
+                            <option value="item_02">Asian Pear Salady</option>
+                            <option value="item_03">Roasted Acorn Squash</option>
+                            <option value="item_04">Smothered Chicken</option>
+                            <option value="item_05">Banana Split</option>
+                            <option value="item_06">Cheese Cake</option>
+                            <option value="item_07">Chocolate Ice Cream</option>
+                            <option value="item_08">Fruit Cake</option>
+                        </select>
+                        <!-------------------- Half / Full Radio ------------------->
+                        <div>
+                            <input type="radio" id="half" name="quantity">Half
+                            <label for="half"></label>
+                            <input type="radio" id="full" name="quantity">Full
+                            <label for="full"></label>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <!-------------------- Total Amount div ------------------->
+                <td >
+                    <div 
+                        <label for="amount">Total Amount</label>
+                        <input type="text" id="amount" name="amount" required>
+                        <div>
+                            <button  type="submit"><a style="color: black;" href="./ordersuccess.html">Submit</a></button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</body>
+
+</html>
