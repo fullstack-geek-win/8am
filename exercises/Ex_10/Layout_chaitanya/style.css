@@ -1,0 +1,74 @@
+body{
+    background-image: url('./img.jpg');
+    background-repeat:no-repeat;
+    background-size: 2000px 1000px;
+    
+    
+    
+}
+.layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 75vh 10vh;
+    grid-template-areas:
+    "h h h h   "
+    "m c c a"
+    "f f f f "
+    ;
+}
+.header{
+    grid-area: h;
+    
+    
+
+
+}
+.Menu{
+    
+    grid-area: m;
+    
+
+}
+.Content{
+    grid-area: c;
+}
+.ad{
+    grid-area: a;
+    
+   
+}
+.ad img{
+    height: 90px;
+    width: 200px;
+}
+.Footer{
+    grid-area: f;
+    
+    
+
+}
+.layout div{
+    border: 1px solid wheat;
+    
+    opacity:0.9 ;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+h1{
+    font-style: italic;
+    color: blanchedalmond;
+}
+p{
+    font-style: italic;
+    color: blanchedalmond;
+} 
+li a{
+    text-decoration: none;
+    
+}
+li a:hover{
+    background-color: cadetblue;
+    color: beige;
+}
+
