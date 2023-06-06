@@ -1,0 +1,55 @@
+body {
+    background-image: url('../image/sz9ihI.webp');
+    background-repeat: no-repeat;
+    background-size: 2000px 3000px;
+}
+.layout {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 75vh 10vh;
+    grid-template-areas: 
+    "h h h h h"
+    "m c c c a"
+    "f f f f f";
+
+}
+
+.header {
+    grid-area: h;
+
+}
+.footer{
+    grid-area: f;
+}
+
+.menu{
+    grid-area: m;
+
+}
+.content{
+    grid-area: c;
+}
+
+.ad{
+    grid-area: a;
+}
+
+.layout div{
+    border:1px solid blueviolet;
+    background-color: white;
+    font-size:5rem;
+    opacity:0.1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+    text-align: center;
+ 
+}
+
+div.footer{
+    font: size 2rem;
+}
+
+.ad img{
+width: 100px;
+}
+
