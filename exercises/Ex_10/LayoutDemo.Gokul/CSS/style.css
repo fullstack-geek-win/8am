@@ -1,0 +1,68 @@
+body{
+    background-image: url("../Image/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 75vh 10vh;
+    grid-template-areas: 
+    "h h h h h"
+    "m c c c a"
+    "f f f f f";
+}
+
+.header{
+    grid-area: h;
+}
+.menu{
+    grid-area: m;
+}
+.content{
+    grid-area: c;
+    font-size: 20px;
+}
+.ad{
+    grid-area: a;
+}
+.footer{
+    grid-area: f;
+    font-size: 10px;
+
+}
+.ad img{
+    width: 200px;
+}
+.layout div{
+    border: 1px solid rgb(12, 12, 12);
+    background-color: rgb(250, 245, 245);
+    opacity: 0.6;
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    align-items: center;
+    text-align: center;
+
+
+}
+.content li{
+font-size: 33px;
+text-align: left;
+padding-top: 10px;
+}
+.content p{
+    text-decoration-color: aqua;
+    text-decoration: aliceblue;
+
+}
+.menu li{
+font-size: 33px;
+text-align: left;
+padding-top: 10px;
+}
+.footer{
+    font-size: 10px;
+}
+
