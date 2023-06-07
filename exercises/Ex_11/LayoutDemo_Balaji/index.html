@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML/CSS Layout Demo</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="layout">
+      <div class="header">HTML/CSS Layout session</div>
+      <div class="menu">
+        <div>Menu</div>
+        <div class="div-size">
+          <button onclick="EmployeeData('Tutor')">Balaji</button>
+        </div>
+        <div class="div-size">
+          <button onclick="EmployeeData('Student1')">Mahesh</button>
+        </div>
+        <div class="div-size">
+          <button onclick="EmployeeData('Student2')">Sarmila</button>
+        </div>
+      </div>
+      <div class="content">
+        <div>Main Content</div>
+        <div>
+          <label for="empId">Employee ID</label>
+          <input type="text" id="empId">
+        </div>
+        <div>
+          <label for="empName">Employee Name</label>
+          <input type="text" id="empName">
+        </div>
+
+      </div>
+      <div class="ad">
+        <img src="./image/adidas.png" alt="No image set in this location.">
+        <img src="./image/lion.jfif" alt="Image got broken.">
+      </div>
+      <div class="footer">
+        Copyright &#169; Besant Technology - 8AM Batch
+      </div>
+    </div>
+
+    <script>
+      function EmployeeData(empType) {
+        let vEmpID = document.getElementById('empId');
+        let vEmpName = document.getElementById('empName');
+        if (empType == 'Tutor') {
+          document.getElementById('empId').value = 'EID001';
+          document.getElementById('empName').value = 'Balaji';
+        }
+        if (empType == 'Student1') {
+          document.getElementById('empId').value = 'SID001';
+          document.getElementById('empName').value = 'Mahesh';
+        }
+        if (empType == 'Student2') {
+          document.getElementById('empId').value = 'SID002';
+          document.getElementById('empName').value = 'Sarmila';
+        }
+      }
+    </script>
+  </body>
+</html>
