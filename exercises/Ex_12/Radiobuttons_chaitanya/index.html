@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" >
+    
+
+</head>
+<body>
+    <div class="layout">
+        <div class="header " style="color: cadetblue;">HTML/CSS layput</div>
+    <div class="Menu" style="color: cadetblue;">Menu 
+        <div >
+            <div class="div-size"> <button onclick="EmployeeData('tutor')">Balaji</button></div>
+           <div class="div-size"> <button onclick="EmployeeData('student 1')">chaitanya</button></div>
+           <div class="div-size"> <button onclick="EmployeeData('student 2')">mahesh</button></div> 
+           <div class="div-size"><button onclick="EmployeeData('student 3')">sarmila</button></div>
+           <div class="div-size"><button onclick="EmployeeData('student 4')">Sivasankar</button></div>
+           <div class="div-size"><button onclick="EmployeeData('student 5')">harathi</button></div>
+           <div class="div-size"><button onclick="EmployeeData('student 6')">maheswari</button></div>
+           <div class="div-size"><button onclick="EmployeeData('student 7')">Alex</button></div>
+           <div class="div-size"><button onclick="EmployeeData('student 8')">Anuj</button></div>
+           <div class="div-size"><button onclick="EmployeeData('student 9')">julusmitha</button></div>
+        </div>
+    </div> 
+    <div class="Content " style="color: cadetblue;">Main Content
+     <div>
+        <label for="empid">employee ID</label>
+        <input type="text" id="empid" >
+     </div>
+     <div>
+        <label for="empName">employee Name</label>
+        <input type="text" id="empName" >
+     </div>
+     <div>
+        <label for="empRole">Role</label>
+        <input type="radio" name="Role" id="tutor">Tutor
+        <input type="radio" name="Role" id="student">Student
+     </div>
+     <div>
+        <label for="gender">gender</label>
+        <input type="radio" name="gender" id="male">Male
+        <input type="radio" name="gender" id="female">female
+        
+     </div>
+    </div>
+    
+    <div class="ad" style="color: cadetblue;">Ads<hr>
+        <img src="./student.jpg" > <br>
+        <img src="./teacher.jpg" >
+
+    </div>
+    <div class="Footer" style="color: cadetblue;">copyright &#169;basant technology-8 Am batch
+
+    </div>
+    <script>
+        function EmployeeData(empType){
+            let vEmpID = document.getElementById('empid');
+            let vEmpName = document.getElementById('empName');
+            if (empType == 'tutor'){
+                document.getElementById('empid').value = 'EID001';
+                document.getElementById('empName').value = 'Balaji'; 
+                document.getElementById('tutor').checked= true;  
+                document.getElementById("male").checked =true; 
+
+            }
+            else if( empType == 'student 1'){
+                document.getElementById('empid').value = 'SID001';
+                document.getElementById('empName').value = 'chaitanya';  
+                document.getElementById('student').checked= true; 
+                document.getElementById("male").checked =true; 
+
+            }
+            else if( empType  == 'student 2'){
+                document.getElementById('empid').value = 'SID002';
+                document.getElementById('empName').value = 'mahesh'; 
+                document.getElementById('student').checked =true; 
+                document.getElementById("male").checked =true; 
+
+            }
+            else if( empType  == 'student 3'){
+                document.getElementById('empid').value = 'SID003';
+                document.getElementById('empName').value = 'sarmila'; 
+                document.getElementById('student').checked = true; 
+                document.getElementById("female").checked =true; 
+
+            }
+            else if( empType  == 'student 4'){
+                document.getElementById('empid').value = 'SID004';
+                document.getElementById('empName').value = 'sivasankar'; 
+                document.getElementById('student').checked = true; 
+                document.getElementById("male").checked =true; 
+
+            }
+            else if( empType  == 'student 5'){
+                document.getElementById('empid').value = 'SID005';
+                document.getElementById('empName').value = 'harathi'; 
+                document.getElementById('student').checked = true; 
+                document.getElementById("female").checked =true; 
+
+            }
+            else if( empType  == 'student 6'){
+                document.getElementById('empid').value = 'SID006';
+                document.getElementById('empName').value = 'maheswari'; 
+                document.getElementById('student').checked = true; 
+                document.getElementById("female").checked =true; 
+
+            }
+            else if( empType  == 'student 7'){
+                document.getElementById('empid').value = 'SID007';
+                document.getElementById('empName').value = 'Alex'; 
+                document.getElementById('student').checked = true; 
+                document.getElementById("male").checked =true; 
+
+            }
+            else if( empType  == 'student 8'){
+                document.getElementById('empid').value = 'SID008';
+                document.getElementById('empName').value = 'Anuj'; 
+                document.getElementById('student').checked = true; 
+                document.getElementById("male").checked =true; 
+
+            }
+            else if( empType  == 'student 9'){
+                document.getElementById('empid').value = 'SID009';
+                document.getElementById('empName').value = 'julusmitha'; 
+                document.getElementById('student').checked = true; 
+                document.getElementById("female").checked =true; 
+
+            }
+
+
+        }
+    </script>
+    
+    
+</body>
+</html
