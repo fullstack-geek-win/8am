@@ -1,0 +1,53 @@
+body {
+    background-image: url('./image/image4.jpg');
+    background-repeat: no-repeat;
+    background-size: 300% 300%;
+    /* width:75%; */
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 75vh 10vh;
+    grid-template-areas: 
+    "h h h h h"
+    "m c c c a"
+    "f f f f f";
+}
+
+.header {
+    grid-area: h;
+}
+.menu {
+    grid-area: m;
+}
+.content {
+    grid-area: c;
+}
+.ad {
+    grid-area: a;
+}
+.footer {
+    grid-area: f;
+}
+.layout div {
+    border: 1px solid white;
+    background-color: rgb(167, 25, 25);
+    opacity: 0.7;
+    font-size: 5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    align-items: center;
+    text-align: center;
+}
+
+div.footer {
+    font-size: 2rem;
+}
+
+.ad img {
+    width: 500px;
+}
+
+.div-size button, input {
+    font-size: 4rem;
+}
