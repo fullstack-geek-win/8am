@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML/CSS Layout Demo</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="layout">
+        <div class="header">Student Portal</div>
+        <div class="menu">
+            <div>Student Name</div>
+            <div class="button-size"><button onclick="EmployeeData('Tutor')">Balaji</button></div>
+            <div  class="button-size"><button onclick="EmployeeData('Student1')">Alex</button></div>
+            <div  class="button-size"><button  onclick="EmployeeData('Student2')">Anuj</button></div>
+            <div  class="button-size"><button  onclick="EmployeeData('Student3')">Mahesh</button></div>
+            <div  class="button-size"><button onclick="EmployeeData('Student4')">Sarmila</button></div>
+
+        </div>
+        <div class="content">
+            <div>Detail</div>
+            <div> <label for="empId">ID</label>
+                <input type="text" id="empId">
+            </div>
+            <div>
+                <label for="empName">Employee Name</label>
+                <input type="text" id="empName">
+              </div>
+        </div>
+        <div class="ad">
+            <img src="./image/a89d01d35e51506b51ef3c7eb4c6ef1b.jpg" alt="Loading..
+      .">
+
+        </div>
+        <div class="footer">
+            Copyright &#169; Aditya Institute - 8AM Batch
+        </div>
+    </div>
+
+
+    <script>
+    function EmployeeData(empType){
+        let vEmpId = document.getElementById('empId');
+        let vEmpName= document.getElementById('empName');
+        if(empType == "Tutor"){
+           
+            vEmpId.value = 'EID001';
+            vEmpName.value = 'Balaji'
+
+        }
+        if(empType == "Student1"){
+           
+           vEmpId.value = 'SID001';
+           vEmpName.value = 'Alex'
+
+       }
+       if(empType == "Student2"){
+           
+           vEmpId.value = 'SID002';
+           vEmpName.value = 'Anuj'
+
+       }
+       if(empType == "Student3"){
+           
+           vEmpId.value = 'SID003';
+           vEmpName.value = 'Mahesh'
+
+       }
+       if(empType == "Student4"){
+           
+           vEmpId.value = 'SID004';
+           vEmpName.value = 'Sarmila'
+
+       }
+
+
+
+
+    }
+      </script>
+</body>
+
+</html>
