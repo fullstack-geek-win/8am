@@ -1,0 +1,42 @@
+Operators in JavaScript:
+
+1. Arithmetic Operators:
+   - Addition (+): Adds two numbers or concatenates two strings.
+   - Subtraction (-): Subtracts one number from another.
+   - Multiplication (*): Multiplies two numbers.
+   - Division (/): Divides one number by another.
+   - Modulo (%): Returns the remainder of a division operation.
+   - Increment (++): Increases the value of a variable by 1.
+   - Decrement (--): Decreases the value of a variable by 1.
+
+2. Assignment Operators:
+   - Assignment (=): Assigns a value to a variable.
+   - Addition assignment (+=): Adds and assigns a value to a variable.
+   - Subtraction assignment (-=): Subtracts and assigns a value to a variable.
+   - Multiplication assignment (*=): Multiplies and assigns a value to a variable.
+   - Division assignment (/=): Divides and assigns a value to a variable.
+   - Modulo assignment (%=): Calculates the modulo and assigns a value to a variable.
+
+3. Comparison Operators:
+   - Equal to (==): Checks if two values are equal.
+   - Not equal to (!=): Checks if two values are not equal.
+   - Strict equal to (===): Checks if two values are equal in value and type.
+   - Strict not equal to (!==): Checks if two values are not equal in value or type.
+   - Greater than (>): Checks if one value is greater than another.
+   - Less than (<): Checks if one value is less than another.
+   - Greater than or equal to (>=): Checks if one value is greater than or equal to another.
+   - Less than or equal to (<=): Checks if one value is less than or equal to another.
+
+4. Logical Operators:
+   - Logical AND (&&): Returns true if both operands are true.
+   - Logical OR (||): Returns true if either operand is true.
+   - Logical NOT (!): Returns the opposite boolean value of the operand.
+
+5. String Operators:
+   - Concatenation (+): Concatenates two strings.
+
+6. Conditional (Ternary) Operator:
+   - Ternary operator (condition ? expr1 : expr2): Evaluates a condition and returns one of two expressions based on the result.
+
+These are some of the most commonly used operators in JavaScript. 
+Understanding these operators will help you perform various operations and calculations in your JavaScript programs.
