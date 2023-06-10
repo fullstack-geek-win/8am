@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="layout">
+    <div class="header">HTML/CSS Layout session</div>
+    <div class="menu">
+      <div>Menu</div>
+      <div class="div-size">
+        <button onclick="EmployeeData('Tutor')">Balaji</button>
+      </div>
+      <div class="div-size">
+        <button onclick="EmployeeData('Student1')">Mahesh</button>
+      </div>
+      <div class="div-size">
+        <button onclick="EmployeeData('Student2')">Sarmila</button>
+      </div>
+      <div class="div-size">
+        <button onclick="EmployeeData('Student3')">Harathi</button>
+      </div>
+      <div class="div-size">
+        <button onclick="EmployeeData('Student4')">Julusmitha</button>
+      </div>
+      <div class="div-size">
+        <button onclick="EmployeeData('Student5')">Aarthi</button>
+      </div>
+      <div class="div-size">
+        <button onclick="EmployeeData('Student6')">Anuj</button>
+      </div>
+      <div class="div-size">
+        <button onclick="EmployeeData('Student7')">Akshay</button>
+      </div>
+      <div class="div-size">
+        <button onclick="EmployeeData('Student8')">Gokul</button>
+      </div>
+      <div class="div-size">
+        <button onclick="EmployeeData('Student9')">Harish</button>
+      </div>
+      <div class="div-size">
+        <button onclick="EmployeeData('Student10')">Bharathi Dasan</button>
+      </div>
+      <div class="div-size">
+        <button onclick="EmployeeData('Student11')">Santana Kannan</button>
+      </div>
+    </div>
+    <div class="content">
+      <div>Main Content</div>
+      <div>
+        <label for="empId">Employee ID</label>
+        <input type="text" id="empId">
+      </div>
+      <div>
+        <label for="empName">Employee Name</label>
+        <input type="text" id="empName">
+      </div>
+      <div>
+        <label for="gender">Gender</label>&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="gender" id="male">Male
+        <input type="radio" name="gender" id="female">Female
+      </div>
+      <div>
+        <label for="empType">Employee Type</label>
+        <input type="text" id="empType">
+      </div>
+      <div>
+        <label for="empSalary">Employee Salary</label>
+        <input type="text" id="empSalary">
+      </div>
+      <label for="empMobile">Employee Mobile No.</label>
+        <input type="text" id="empMobile">
+      </div>
+      <div class="ad">
+        <img src="./image/image1.jpg" height="200px"width="700px" alt="No image set in this location.">
+          <img src="./image/image3.jpg" height="200px" width="700px" alt="Image got broken.">
+  
+      </div>
+      
+    
+    <div class="footer">
+      Copyright &#169; Besant Technology - 8AM Batch
+    </div>
+  </div>
+
+  <script>
+    function EmployeeData(empType) {
+      let vEmpID = document.getElementById('empId');
+      let vEmpName = document.getElementById('empName');
+      if (empType == 'Tutor') {
+        document.getElementById('empId').value = 'EID001';
+        document.getElementById('empName').value = 'Balaji';
+        document.getElementById('empSalary').value = '50000'
+        document.getElementById('empMobile').value = '9600074577'
+        document.getElementById('empType').value = 'Tutor';
+        GenderSelection();
+        // document.getElementsByName('gender').value = "Male";
+      }
+      if (empType == 'Student1') {
+        document.getElementById('empId').value = 'SID001';
+        document.getElementById('empName').value = 'Mahesh';
+        document.getElementById('empSalary').value = '40000'
+        document.getElementById('empMobile').value = '8095323327'
+        document.getElementById('empType').value = 'Student';
+        GenderSelection();
+        // document.getElementsByName('gender').value = "Male";
+      }
+      if (empType == 'Student2') {
+        document.getElementById('empId').value = 'SID002';
+        document.getElementById('empName').value = 'Sarmila';
+        document.getElementById('empSalary').value = '30000'
+        document.getElementById('empMobile').value = '7339414608'
+        document.getElementById('empType').value = 'Student';
+        GenderSelection();
+        // document.getElementsByName('gender').value = "Female";
+      }
+      if (empType == 'Student3') {
+        document.getElementById('empId').value = 'SID003';
+        document.getElementById('empName').value = 'Harathi';
+        document.getElementById('empSalary').value = '60000'
+        document.getElementById('empMobile').value = '9573050402'
+        document.getElementById('empType').value = 'Student';
+        GenderSelection();
+        // document.getElementsByName('gender').value = "Female";
+      }
+      if (empType == 'Student4') {
+        document.getElementById('empId').value = 'SID004';
+        document.getElementById('empName').value = 'Julusmitha';
+        document.getElementById('empSalary').value = '45000'
+        document.getElementById('empMobile').value = '9348835493'
+        document.getElementById('empType').value = 'Student';
+        GenderSelection();
+        // document.getElementsByName('gender').value = "Female";
+      }
+      if (empType == 'Student5') {
+        document.getElementById('empId').value = 'SID005';
+        document.getElementById('empName').value = 'Aarthi';
+        document.getElementById('empSalary').value = '35000'
+        document.getElementById('empMobile').value = '8489942998'
+        document.getElementById('empType').value = 'Student';
+        GenderSelection();
+        // document.getElementsByName('gender').value = "Female";
+      }
+      if (empType == 'Student6') {
+        document.getElementById('empId').value = 'SID006';
+        document.getElementById('empName').value = 'Anuj';
+        document.getElementById('empSalary').value = '55000'
+        document.getElementById('empMobile').value = '7042240439'
+        document.getElementById('empType').value = 'Student';
+        GenderSelection();
+        // document.getElementsByName('gender').value = "Male";
+      }
+      if (empType == 'Student7') {
+        document.getElementById('empId').value = 'SID007';
+        document.getElementById('empName').value = 'Akshay';
+        document.getElementById('empSalary').value = '65000'
+        document.getElementById('empMobile').value = '9785432145'
+        document.getElementById('empType').value = 'Student';
+        GenderSelection();
+        // document.getElementsByName('gender').value = "Male";
+      }
+      if (empType == 'Student8') {
+        document.getElementById('empId').value = 'SID008';
+        document.getElementById('empName').value = 'Gokul';
+        document.getElementById('empSalary').value = '53000'
+        document.getElementById('empMobile').value = '7995824176'
+        document.getElementById('empType').value = 'Student';
+        GenderSelection();
+        // document.getElementsByName('gender').value = "Male";
+      }
+      if (empType == 'Student9') {
+        document.getElementById('empId').value = 'SID009';
+        document.getElementById('empName').value = 'Harish';
+        document.getElementById('empSalary').value = '44000'
+        document.getElementById('empMobile').value = '8688889321'
+        document.getElementById('empType').value = 'Student';
+        GenderSelection();
+        // document.getElementsByName('gender').value = "Male";
+      }
+      if (empType == 'Student10') {
+        document.getElementById('empId').value = 'SID0010';
+        document.getElementById('empName').value = 'Bharathi Dasan';
+        document.getElementById('empSalary').value = '34000'
+        document.getElementById('empMobile').value = '6754395432'
+        document.getElementById('empType').value = 'Student';
+        GenderSelection();
+        // document.getElementsByName('gender').value = "Male";
+      }
+      if (empType == 'Student11') {
+        document.getElementById('empId').value = 'SID0011';
+        document.getElementById('empName').value = 'Santana Kannan';
+        document.getElementById('empSalary').value = '50000'
+        document.getElementById('empMobile').value = '7047589564'
+        document.getElementById('empType').value = 'Student';
+        GenderSelection();
+        // document.getElementsByName('gender').value = "Male";
+      }
+    }
+    function MemberTypeStrChange(empType){
+        if (empType.includes("Student"))
+      Emptype="Student";
+      return emptype;
+    }
+    function GenderSelection() {
+      let gender;
+      if (document.getElementById('empName').value == "Balaji")
+        document.getElementById("male").checked = true;
+      else if (document.getElementById('empName').value == "Mahesh")
+        document.getElementById("male").checked = true;
+      else if (document.getElementById('empName').value == "Sarmila")
+        document.getElementById("female").checked = true;
+        else if (document.getElementById('empName').value == "Harathi")
+        document.getElementById("female").checked = true;
+        else if (document.getElementById('empName').value == "Julusmitha")
+        document.getElementById("female").checked = true;
+        else if (document.getElementById('empName').value == "Aarthi")
+        document.getElementById("female").checked = true;
+        else if (document.getElementById('empName').value == "Anuj")
+        document.getElementById("male").checked = true;
+        else if (document.getElementById('empName').value == "Akshay")
+        document.getElementById("male").checked = true;
+        else if (document.getElementById('empName').value == "Gokul")
+        document.getElementById("male").checked = true;
+        else if (document.getElementById('empName').value == "Harish")
+        document.getElementById("male").checked = true;
+        else if (document.getElementById('empName').value == "Bharathi Dasan")
+        document.getElementById("male").checked = true;
+        else if (document.getElementById('empName').value == "Santana Kannan")
+        document.getElementById("male").checked = true;
+    }
+  </script>
+
+</body>
+
+</html>

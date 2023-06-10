@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="checkbox" id="css" name="css" value="css">
+    <label for="css">CSS</label>
+
+    <script>
+        // Empty Array
+        let emptyArray = [];
+
+        // Array
+        emptyArray = ['HTML', 'CSS', 'Javascript'];
+
+        // Array
+        const skillList = ['HTML', 'CSS', 'Javascript'];
+
+        // Mixed Array
+        let mixedArray = ['Balaji', 10, 13.33, true, null]
+
+        // 3 way
+        // 1st way
+        for (let i = 0; i < skillList.length; i++)
+            console.log((i + 1) + '. ' + skillList[i]);
+
+        // 2nd way
+        for (let skill of skillList)
+            console.log(skill);
+
+        // 3rd way
+        skillList.forEach(function (skill) {
+            console.log(skill);
+        });
+
+
+
+        // Multi Dimentional Array
+        let membersList = [
+            ['Balaji', 'Tutor', 'E001'],
+            ['Mahesh', 'Student1', 'S001']
+        ]
+
+    </script>
+</body>
+
+</html>

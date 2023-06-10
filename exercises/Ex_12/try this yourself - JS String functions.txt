@@ -1,0 +1,40 @@
+string functions in JavaScript:
+
+1. Length:
+   - Syntax: `string.length`
+     const str = "Hello, world!";
+     console.log(str.length); // Output: 13
+
+2. Concatenation:
+   - Syntax: `string1.concat(string2, string3, ...)`
+     const str1 = "Hello";
+     const str2 = "world!";
+     const result = str1.concat(", ", str2);
+     console.log(result); // Output: "Hello, world!"
+
+
+3. Substring:
+   - Syntax: `string.substring(startIndex, endIndex)`
+     const str = "Hello, world!";
+     const result = str.substring(0, 5);
+     console.log(result); // Output: "Hello"
+
+4. Replace:
+   - Syntax: `string.replace(searchValue, replaceValue)`
+     const str = "Hello, world!";
+     const result = str.replace("world", "there");
+     console.log(result); // Output: "Hello, there!"
+
+
+5. To Upper Case:
+   - Syntax: `string.toUpperCase()`
+     const str = "Hello, world!";
+     const result = str.toUpperCase();
+     console.log(result); // Output: "HELLO, WORLD!"
+
+
+6. To Lower Case:
+   - Syntax: `string.toLowerCase()`
+     const str = "Hello, world!";
+     const result = str.toLowerCase();
+     console.log(result); // Output: "hello, world!"

@@ -1,0 +1,76 @@
+* {
+    font-style: italic;
+}
+
+body {
+    background-image: url('../image/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 2000px;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 11vh 75vh 11vh;
+    grid-template-areas:
+        "h h h h h"
+        "m c c c a"
+        "f f f f f";
+}
+
+.header {
+    grid-area: h;
+}
+
+.footer {
+    grid-area: f;
+}
+
+.menu {
+    grid-area: m;
+}
+
+.content {
+    grid-area: c;
+}
+
+.ad {
+    grid-area: a;
+}
+
+.layout div {
+    border: 1px solid blueviolet;
+    background-color: black;
+    opacity: 0.8;
+    font-size: 2.5rem;
+    font-family: serif;
+    color: gainsboro;
+    text-align: center;
+}
+
+div.footer {
+    font-size: 1.5rem;
+}
+
+img {
+    width: 270px;
+}
+
+input {
+    font-size: 2rem;
+    background-color: burlywood;
+    font-weight:lighter;
+    font-style:normal;
+}
+
+button {
+    border-radius: 10%;
+    font-size: 1.5rem;
+    background-color: darkgrey;
+    font-style: normal;
+}
+
+input[type=radio] {
+    height: 20px;
+    width: 30px;
+}
