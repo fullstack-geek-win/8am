@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header_banner">
+            <marquee behavior="alternate"><p>MENU OF LAYOUTS IN HTML</p></marquee>
+        </div>
+        <div class="intro_div">
+            HTML/CSS Layout Session
+        </div>
+        <div id="main_div" class="clearfix">
+            <div class="box">
+                <div class="div_menu"> Menu</div>
+                <div>
+                    <button onclick="EmployeeData('Tutor')">Balaji</button>
+                  </div>
+                  <div >
+                    <button onclick="EmployeeData('Student1')">Julusmita</button>
+                  </div>
+                  <div>
+                    <button onclick="EmployeeData('Student2')">Harathi</button>
+                  </div>
+                  <div>
+                    <button onclick="EmployeeData('Student3')">Mahesh</button>
+                  </div>
+                  <div>
+                    <button onclick="EmployeeData('Student4')">Chaitanya</button>
+                  </div> 
+            </div>
+            <div class="box">
+                <div class="div_menu">Main content</div>
+                <div class="menu">
+                    <label for="empId">Employee ID:</label>
+                    <input  type="text" id="empId"><br>
+                </div>
+                <div class="menu">
+                    <label for="empName">Employee Name:</label>
+                    <input  type="text" id="empName">
+                </div>
+                <div class="menu">
+                  <label for="empDOB">Employee DOB:</label>
+                  <input type="text" id="empDOB">
+                </div>
+                <div class="menu">
+                 <label for="empContact">Employee Contact:</label>
+                 <input type="text" id="empContact">
+                </div>
+                <div class="menu">
+                    <label for="empType">Member Type:</label>
+                    <input type="text" id="empType">
+                </div>
+            </div>
+        <div class="box">
+            <div class="div_menu">Ads</div>
+            <img src="./image/tutor.jpg" height="210px" width="463px"><br>
+            <img src="./image/tutor2.jpg" height="210px" width="463px">
+        </div>
+    </div>
+    <div class="footer">
+        Copyright &#169; Besant Technology - 8AM Batch
+    </div>
+    <script>
+        function EmployeeData(empType) {
+              let vEmpID = document.getElementById('empId');
+              let vEmpName = document.getElementById('empName');
+              let vEmpDOB = document.getElementById('empDOB');
+              let vEmpContact = document.getElementById('empContact');
+              let vEmpType = empType;
+              if (empType == 'Tutor') {
+                document.getElementById('empId').value = 'EID001';
+                document.getElementById('empName').value = 'Balaji';
+                document.getElementById('empDOB').value = '17-05-1965';
+                document.getElementById('empContact').value = '9600074577';
+                document.getElementById('empType').value = MemberTypeStrChange(vEmpType);
+              }
+              if (empType == 'Student1') {
+                document.getElementById('empId').value = 'SID001';
+                document.getElementById('empName').value = 'Julusmita';
+                document.getElementById('empDOB').value = '06-09-2001';
+                document.getElementById('empContact').value = '9348835493';
+                document.getElementById('empType').value = MemberTypeStrChange(vEmpType);
+              }
+              if (empType == 'Student2') {
+                document.getElementById('empId').value = 'SID002';
+                document.getElementById('empName').value = 'Harathi';
+                document.getElementById('empDOB').value = '23-08-2003';
+                document.getElementById('empContact').value = '9573050402'
+                document.getElementById('empType').value = MemberTypeStrChange(vEmpType);
+              }
+              if (empType == 'Student3') {
+                document.getElementById('empId').value = 'SID003';
+                document.getElementById('empName').value = 'Mahesh';
+                document.getElementById('empDOB').value = '15-08-1993';
+                document.getElementById('empContact').value = '9574050472'
+                document.getElementById('empType').value = MemberTypeStrChange(vEmpType);
+              }
+              if (empType == 'Student4') {
+                document.getElementById('empId').value = 'SID004';
+                document.getElementById('empName').value = 'Chaitanya';
+                document.getElementById('empDOB').value = '23-08-2000';
+                document.getElementById('empContact').value = '8973050402'
+                document.getElementById('empType').value = MemberTypeStrChange(vEmpType);
+              }
+             
+            }
+        
+            function MemberTypeStrChange(vEmpType) {
+              if (vEmpType.includes("Student"))
+                vEmpType = "Student";
+        
+              return vEmpType;
+            }
+        
+        </script>
+</body>
+
+</html>
