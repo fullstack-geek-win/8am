@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML/CSS Layout Demo</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="layout">
+        <div class="header">Student Portal</div>
+        <div class="menu">
+            <div>Student Name</div>
+            <div class="button-size"><button onclick="EmployeeData('Tutor')">Balaji</button></div>
+            <div class="button-size"><button onclick="EmployeeData('Student1')">Alex</button></div>
+            <div class="button-size"><button onclick="EmployeeData('Student2')">Anuj</button></div>
+            <div class="button-size"><button onclick="EmployeeData('Student3')">Mahesh</button></div>
+            <div class="button-size"><button onclick="EmployeeData('Student4')">Sarmila</button></div>
+
+        </div>
+        <div class="content">
+            <div>Detail</div>
+            <div> <label for="empId">ID</label>
+                <input type="text" id="empId">
+            </div>
+            <div>
+                <label for="empName">Employee Name</label>
+                <input type="text" id="empName">
+            </div>
+            <div>
+                <label for="empType">Member Type</label>
+                <input type="text" id="empType">
+            </div>
+
+            <div>
+                <label for="gender">Gender</label>&nbsp;&nbsp;&nbsp;
+                Male<input type="radio" name="gender" id="male">
+                Female<input type="radio" name="gender" id="female">
+            </div>
+            <div id="skillsetContainer">
+
+            </div>
+
+        </div>
+        <div class="ad">
+            <img src="./image/a89d01d35e51506b51ef3c7eb4c6ef1b.jpg" alt="Loading..
+      .">
+
+        </div>
+        <div class="footer">
+            Copyright &#169; Aditya Institute - 8AM Batch
+        </div>
+    </div>
+
+
+    <script>
+
+        let skills = ['HTML', 'CSS', 'Javascript', 'ReactJs', 'NodeJs'];
+
+        let skillsetContainer = document.getElementById('skillsetContainer');
+
+        skills.forEach(function (skill) {
+            // check box
+            let checkBox = document.createElement("input");
+            checkBox.type = "checkbox";
+            checkBox.id = "skillItem";
+            checkBox.name = "skillItem";
+            checkBox.value = skill;
+
+            // label
+            let label = document.createElement("label");
+            label.appendChild(document.createTextNode(skill));
+
+            // append Container div
+            skillsetContainer.appendChild(checkBox);
+            skillsetContainer.appendChild(label);
+
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function EmployeeData(empType) {
+            let vEmpId = document.getElementById('empId');
+            let vEmpName = document.getElementById('empName');
+            let vEmpType = empType;
+
+            if (empType == "Tutor") {
+
+                vEmpId.value = 'EID001';
+                vEmpName.value = 'Balaji';
+                document.getElementById('empType').value = MemberTypeStrChange(vEmpType);
+                GenderSelection();
+
+
+
+
+            }
+            if (empType == "Student1") {
+
+                vEmpId.value = 'SID001';
+                vEmpName.value = 'Alex';
+                document.getElementById('empType').value = MemberTypeStrChange(vEmpType);
+                GenderSelection();
+
+
+            }
+            if (empType == "Student2") {
+
+                vEmpId.value = 'SID002';
+                vEmpName.value = 'Anuj';
+                document.getElementById('empType').value = MemberTypeStrChange(vEmpType);
+                GenderSelection();
+
+
+            }
+            if (empType == "Student3") {
+
+                vEmpId.value = 'SID003';
+                vEmpName.value = 'Mahesh';
+                document.getElementById('empType').value = MemberTypeStrChange(vEmpType);
+                GenderSelection();
+
+
+            }
+            if (empType == "Student4") {
+
+                vEmpId.value = 'SID004';
+                vEmpName.value = 'Sarmila';
+                document.getElementById('empType').value = MemberTypeStrChange(vEmpType);
+                GenderSelection();
+
+            }
+
+            function MemberTypeStrChange(vEmpType) {
+                if (vEmpType.includes("Student"))
+                    vEmpType = "Student";
+
+                return vEmpType;
+            }
+
+            function GenderSelection() {
+                if (vEmpName.value == 'Balaji')
+                    document.getElementById("male").checked = true;
+                else if (vEmpName.value == 'Alex')
+                    document.getElementById("male").checked = true;
+                else if (vEmpName.value == 'Anuj')
+                    document.getElementById("male").checked = true;
+                else if (vEmpName.value == 'Mahesh')
+                    document.getElementById("male").checked = true;
+                else if (vEmpName.value == 'Sarmila')
+                    document.getElementById("female").checked = true;
+            }
+        }
+    </script>
+</body>
+
+</html>

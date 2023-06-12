@@ -1,0 +1,68 @@
+body {
+    background-image: url('../image/p9mUO.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 75vh 10vh;
+    grid-template-areas: 
+    "h h h h h"
+    "m c c c a"
+    "f f f f f";
+    color: white;
+
+}
+
+.header {
+    grid-area: h;
+    text-decoration:underline;
+}
+.menu {
+    grid-area: m;
+  
+}
+.content {
+    grid-area: c;
+}
+.ad {
+    grid-area: a;
+}
+.footer {
+    grid-area: f;
+}
+.layout div {
+    border: 1px solid white;
+    opacity: 0.7;
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    align-items: center;
+    text-align: center;
+}
+
+div.footer {
+    font-size: 2rem;
+}
+
+.ad img {
+    width: 300px;
+    height: 100x;
+}
+.button-size button, input{
+    font-size: 20px;
+}
+input[type=radio] {
+    border: 0px;
+    width: 10%;
+    height: 1em;
+}
+input[type=checkbox] {
+    border: 0px;
+    width: 10%;
+    height: 1em;
+}
+
+
