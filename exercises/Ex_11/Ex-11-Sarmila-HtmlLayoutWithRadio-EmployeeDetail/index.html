@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="layout">
+        <div class="Header">Employee Details</div>
+        <!--------------------------- user name section ----------------------->
+        <div class="menu">
+            <div class="empHeader">Employee List</div>
+            <div class="div-size">
+                <button onclick="EmployeeDetails('Freasher')">Sarmila S</button>
+            </div>
+            <div class="div-size">
+                <button onclick="EmployeeDetails('Supervisor')">Nishnth S</button>
+            </div>
+            <div class="div-size">
+                <button onclick="EmployeeDetails('Fitter')">Bavith B </button>
+            </div>
+            <div class="div-size">
+                <button onclick="EmployeeDetails('Welder')">Shreesha S</button>
+            </div>
+            <div class="div-size">
+                <button onclick="EmployeeDetails('Rigger')">Harini K</button>
+            </div>
+            <div class="div-size">
+                <button onclick="EmployeeDetails('Grinder')">Madhan K</button>
+            </div>
+            <div class="div-size">
+                <button onclick="EmployeeDetails('Supervisor1')">Dhakshu S</button>
+            </div>
+            <div class="div-size">
+                <button onclick="EmployeeDetails('Freasher1')">Geetha A</button>
+            </div>
+            <div class="div-size">
+                <button onclick="EmployeeDetails('Welder1')">Priyanka K</button>
+            </div>
+            <div class="div-size">
+                <button onclick="EmployeeDetails('Grinder1')">Dayalan S</button>
+            </div>
+        </div>
+        <!--------------------------- Employee details showing here based on the employee name ----------------------->
+        <div class="content">
+            <div class="empHeader">Employment Detail</div>
+            <div class="EmpDetails">
+                <form>
+                <table class="contentAlign">
+                    <tr>
+                        <td>
+                            <label for="empId">Employee Id</label>
+                        </td>
+                        <td>
+                            <input type="text" id="empId" readonly>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="empFName">Employee Name</label>
+                        </td>
+                        <td>
+                            <input type="text" id="empFName" readonly>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div>Part / Full Time</div>
+                        </td>
+                        <td>
+                            <input type="radio" id="fullTime" class="radioAlign" disabled>Full
+                            <label for="fullTime"></label>
+                            <input type="radio" id="partTime" class="radioAlign" disabled>Part
+                            <label for="partTime"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="empSalary">Employee Salary</label>
+                        </td>
+                        <td>
+                            <input type="text" id="empSalary" readonly>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="empDept">Employee Dept.</label>
+                        </td>
+                        <td>
+                            <select name="empDept" id="empDept" disabled>
+                                <option value=""></option>
+                                <option value="1">Freasher</option>
+                                <option value="2">Supervisor</option>
+                                <option value="3">Fitter</option>
+                                <option value="4">Welder</option>
+                                <option value="5">Rigger</option>
+                                <option value="6">Grinder</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="empHiredate">Employee Hiredate</label>
+                        </td>
+                        <td>
+                            <input type="date" id="empHiredate" readonly>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="empExp">Total Experience</label>
+                        </td>
+                        <td>
+                            <input type="text" id="empExp" readonly>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="empManager">Employee manager</label>
+                        </td>
+                        <td>
+                            <input type="text" id="empManager" readonly>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>Transpotation</div>
+                        </td>
+                        <td> 
+                            <input type="checkbox" class="radioAlign" id="transBike" name="transBike" value="Own bike" disabled>
+                            <label for="transBike"> Own bike</label><br>
+                            <input type="checkbox" class="radioAlign" id="transCar" name="transCar" value="Own car" disabled>
+                            <label for="transCar"> Own car</label><br>
+                            <input type="checkbox" class="radioAlign" id="transBus" name="transBus" value="Out Bus" disabled>
+                            <label for="transBus"> Out Bus</label><br>
+                            <input type="checkbox" class="radioAlign" id="transOfz" name="transOfz"
+                                value="I need office transpotation" disabled>
+                            <label for="transOfz"> I need office transpotation</label><br>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            </div>
+        </div>
+
+        <!--------------------------- Employee identy card showing here based on the employee name ----------------------->
+        <div class="ad" id="hideDiv">
+            <div>
+                <h1 class="helpText">Please select the employee</h1>
+            </div>
+        </div>
+        <div class="ad" id="idDiv" hidden>
+            <div class="empHeader">Identification</div>
+            <div class="imgDiv">
+                <img class="userPic" id="emp1" src="./Images/Emp1.jpg" hidden>
+                <img class="userPic" id="emp2" src="./Images/Emp2.jpg" hidden>
+                <img class="userPic" id="emp3" src="./Images/Emp3.jpg" hidden>
+                <img class="userPic" id="emp4" src="./Images/Emp4.png" hidden>
+                <img class="userPic" id="emp5" src="./Images/Emp5.jpg" hidden>
+                <img class="userPic" id="emp6" src="./Images/Emp6.png" hidden>
+            </div>
+            <div>
+                <h2 class="fontAlign">
+                    <div id="empName" class="idName"></div>
+                </h2>
+                <table>
+                    <tr>
+                        <td class="idTopic">
+                            Id No.:
+                        </td>
+                        <td class="idData">
+                            <div id="idNo"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="idTopic">
+                            DOB:
+                        </td>
+                        <td class="idData">
+                            <div id="empDOB"></div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="idTopic">
+                            Contact:
+                        </td>
+                        <td class="idData">
+                            <div id="empContact"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="idTopic">
+                            Email:
+                        </td>
+                        <td class="idData">
+                            <div id="empEmail"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="idTopic">
+                            Address:
+                        </td>
+                        <td class="idData">
+                            <div id="empAdd"></div>
+                        </td>
+                    </tr>
+                </table>
+                <hr>
+                <div>
+                    <h4 class="idTopic">Entry QR :</h4>
+                    <div class="qrAlign">
+                        <img class="qrAlign" id="qr1" src="./Images/qr1.png" hidden>
+                        <img class="qrAlign" id="qr2" src="./Images/qr2.png" hidden>
+                        <img class="qrAlign" id="qr4" src="./Images/qr4.png" hidden>
+                        <img class="qrAlign" id="qr5" src="./Images/qr5.png" hidden>
+                        <img class="qrAlign" id="qr3" src="./Images/rq3.png" hidden>
+                    </div>
+                </div>
+                <br>
+                <div class="idTopic">Issued on: <span id="idIssueDate" class="idName"></span></div>
+            </div>
+        </div>
+
+         <!--------------------------- Company address showing in marquee ----------------------->
+        <div class="Footer">
+            <marquee behavior="abc" direction="rel"> copyright &#169; Besant Technology - Software Traning instuite -
+                1st Floor, No 54, 1633, 13th Main Rd, Bharathi Colony, H Block, Tirumaniamman Nagar, Anna Nagar,
+                Chennai, Tamil Nadu 600040</marquee>
+        </div>
+    </div>
+
+             <!--------------------------- Calling external JS----------------------->
+    <script src="./script.js">
+    </script>
+</body>
+
+</html>
