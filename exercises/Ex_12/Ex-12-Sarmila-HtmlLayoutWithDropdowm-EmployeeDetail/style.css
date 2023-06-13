@@ -1,0 +1,221 @@
+body {
+    background-image: url("./Images/bg4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layout {
+    opacity: 1;
+    align-items: center;
+    text-align: center;
+}
+
+.div-size {
+    border: 0px;
+}
+
+.layout {
+    display: grid;
+    grid-template-rows: 10vh 75vh 10vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "h h h h h"
+        "m c c c a"
+        "f f f f f";
+}
+
+.Header {
+    grid-area: h;
+    color: brown;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 35px;
+    text-shadow: 0 0 3px #FF0000;
+}
+.idName{
+    color: brown;
+    font-weight: bold;
+    text-shadow: 0 0 3px #FF0000;
+}
+
+.Footer {
+    grid-area: f;
+    font-family: papyrus;
+    font-weight: bold;
+    opacity: 0.7;
+    margin-top: 5%;
+}
+
+.menu {
+    grid-area: m;
+    font-family: Tunga;
+    color: black;
+    font-size: 25px;
+    font-weight: bolder;
+    text-shadow: 0 0 3px grey;
+    background-image: url("./Images/identyCard.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 80px 0px 80px 0px;
+    opacity: 0.8;
+    padding: 18px;
+}
+
+.content {
+    grid-area: c;
+    font-family: Tunga;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 100px 0px 100px 0px;
+    background-image: url("./Images/bgDiv.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px 0px 10px 20px;
+    text-shadow: 0 0 2px grey;
+    opacity: 0.9;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ad {
+    grid-area: a;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    align-items: center;
+    background-image: url("./Images/identyCard.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0px 80px 0px 80px;
+    opacity: 0.8;
+    padding: 15px;
+    height: 103%;
+    width:89%;
+}
+.fontAlign{
+    font-family: papyrus;
+}
+.EmpDetails {
+    font-size: 20px;
+    color: darkslategray;
+}
+
+button {
+    background-color: darkgoldenrod;
+    border: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 2px 2px;
+    cursor: pointer;
+    width: 65%;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    text-shadow: 0 0 1px grey;
+    opacity: 0.9;
+}
+.idTopic{
+    text-shadow: 0 0 1px grey;
+    color: darkgoldenrod;
+}
+.idData{
+    color: darkblue;
+    text-shadow: 0 0 1px grey;
+}
+.empHeader {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Tunga;
+    font-size: 25px;
+    text-shadow: 2px 0 6px grey;
+    margin-bottom: 10px;
+}
+
+td {
+    padding: 3px;
+    text-align: initial;
+    padding-left: 15px;
+
+}
+
+input {
+    height: 30px;
+    width: 200px;
+    border-radius: 8px;
+    color: darkblue;
+    background-color: rgb(219, 218, 218);
+    font-weight: bold;
+    font-size: 15px;
+
+}
+select{
+    height: 35px;
+    width: 208px;
+    border-radius: 8px;
+    color: darkblue;
+    background-color:rgb(219, 218, 218);
+    font-weight: bold;
+    font-size: 15px;
+    border-color: black;
+}
+
+
+.qrAlign {
+    width: 80px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    margin: 0px;
+}
+
+.identyDetails {
+    margin: 0px 25px 0px 25px;
+}
+
+h4 {
+    margin: 0px;
+}
+
+marquee {
+    background-color: gold;
+    font-size: 14px;
+    color: black;
+}
+
+.userPic {
+    width: 110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contentAlign {
+    margin-left: auto;
+    margin-right: auto;
+}
+.radioAlign{
+    height: 15px;
+    width: 15px;
+}
+.helpText{
+    opacity: 0.3;
+    margin-top: 85%;
+    margin-bottom: 100%;
+}
+.imgDiv{
+    height: 27%;
+}
+.qrAlign{
+    height: 15%;
+}
