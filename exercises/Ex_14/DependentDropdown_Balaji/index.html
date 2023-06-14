@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dependent Dropdown</title>
+</head>
+
+<body>
+    <!-- State -->
+    <label for="state">State: </label>
+    <select name="state" id="state" onchange="selectCities()">
+        <option value="1">Kerala</option>
+        <option value="2">AndhraPradesh</option>
+        <option value="3">Telangana</option>
+        <option value="4">Tamilnadu</option>
+    </select>
+    <!-- City -->
+    <label for="city">City</label>
+    <select name="city" id="city">
+        <option value="">-- Select --</option>
+    </select>
+
+    <script type="text/javascript">
+        let cityByState = {
+            1: ["Kochin", "Palakad", "Thiruvanandhapuram"],
+            2: ["Chittur", "Ananthapur", "Thirupathi"],
+            3: ["Mehaboop Nagar", "Kakkinada"],
+            4: ["Chennai", "Madurai", "Trichy"]
+        };
+
+        function selectCities() {
+            let statedropdown = document.getElementById("state");
+            let citydropdown = document.getElementById("city");
+            let selectedState = statedropdown.value;
+
+            citydropdown.innerHTML = "<option value=''>-- Select --</option>";
+            // console.log(selectedState);
+
+            if (selectedState !== "") {
+                let cities = cityByState[selectedState];
+                for (let i = 0; i < cities.length; i++) {
+                    let option = document.createElement("option");
+                    option.text = cities[i];
+                    option.value = cities[i];
+                    citydropdown.appendChild(option);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

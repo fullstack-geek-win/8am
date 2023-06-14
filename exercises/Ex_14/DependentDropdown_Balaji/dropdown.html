@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <select name="empDept" id="empDept" onchange="change()">
+        <option value=""></option>
+        <option id="empFresher" value="Freasher">Freasher</option>
+        <option id="empSupervisor" value="Supervisor">Supervisor</option>
+        <option id="empFitter" value="Fitter" selected>Fitter</option>
+        <option id="empWelder" value="Welder">Welder</option>
+        <option id="empRigger" value="Rigger">Rigger</option>
+        <option id="empGrinder" value="Grinder">Grinder</option>
+    </select>
+    <script>
+        function change() {
+            console.log(document.getElementById("empDept").value);
+            console.log(document.getElementById("empSupervisor").value);
+        }
+
+    </script>
+</body>
+
+</html>
