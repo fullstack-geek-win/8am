@@ -1,0 +1,8 @@
+this is Frontend project for Employee details
+using
+1. HTML
+2. CSS
+3. DOM
+4. Javascript
+
+Next 3 days, will complete this project.
