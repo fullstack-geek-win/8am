@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!---state-->
+    <label for="state">state</label>
+    <select name="state" id="state" onchange="selectCities()">
+        <option value="1">kerala</option>
+        <option value="2">AndhraPradesh</option>
+        <option value="3">telengana</option>
+        <option value="4">Tamilnadu</option>
+    </select>
+    <!---cities-->
+    <label for="city">city</label>
+    <select name="city" id="city">
+    <option value="">---select--</option>
+    </select>
+
+    <script type="text/javascript">
+        let cityByState = {
+            1: ["kochin","palakad","thiruvanathapuram"],
+            2: ["kadapa","tirupathi","nellore"],
+            3: ["mahaboop Nagar","kakkinada"],
+            4: ["chennai","madurai","trichy"]
+        };
+        function selectCities() {
+            let statedropdown = document.getElementById("state");
+            let citydropdown = document.getElementById("city");
+            let selectedState = statedropdown.value;
+
+            citydropdown.innerHTML = "<option value=''>-- Select --</option>";
+            // console.log(selectedState);
+
+            if (selectedState !== "") {
+                let cities = cityByState[selectedState];
+                for (let i = 0; i < cities.length; i++) {
+                    let option = document.createElement("option");
+                    option.text = cities[i];
+                    option.value = cities[i];
+                    citydropdown.appendChild(option);
+                }
+            }
+        }
+        
+
+       
+    </script>
+</body>
+</html>
