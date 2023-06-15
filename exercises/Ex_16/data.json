@@ -1,0 +1,40 @@
+{
+    "Products": {
+        "Food": [
+            {
+                "ProductId": "MAG001",
+                "ProductName": "Maggi",
+                "Category": [
+                    "Black",
+                    "Orange",
+                    "Soft"
+                ],
+                "Manufacturar": {
+                    "ManufacturarName": "Nestle Food Products",
+                    "ManufacturarAddress": "Mumbai",
+                    "GSTID": "0001203842834"
+                },
+                "Prize": "65.40",
+                "Currency": "Rupees"
+            }
+        ],
+        "Drink": [
+            {
+                "ProductId": "CC001",
+                "ProductName": "SoftDrink",
+                "Category": [
+                    "Coke",
+                    "Fanta",
+                    "7up"
+                ],
+                "Manufacturar": {
+                    "ManufacturarName": "Coco-Cola bevaraes",
+                    "ManufacturarAddress": "USA",
+                    "GSTID": ""
+                },
+                "Prize": "2.5",
+                "Currency": "Doller"
+            }
+        ]
+    }
+}
