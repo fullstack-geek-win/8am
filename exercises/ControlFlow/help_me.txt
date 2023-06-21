@@ -1,0 +1,86 @@
+Control flow in JavaScript:
+
+Control flow refers to the order in which statements are executed in a program. In JavaScript, control flow is managed using conditional statements (if-else statements) and loops (for loop, while loop, do-while loop). These control flow structures allow you to make decisions and repeat code based on certain conditions.
+
+1. Conditional Statements:
+   - If statement: Executes a block of code if a specified condition is true.
+javascript
+     if (condition) {
+       // code to be executed if condition is true
+     }
+
+
+   - If-else statement: Executes a block of code if a specified condition is true, and another block of code if it is false.
+javascript
+     if (condition) {
+       // code to be executed if condition is true
+     } else {
+       // code to be executed if condition is false
+     }
+
+
+   - If-else if-else statement: Executes different blocks of code based on multiple conditions.
+javascript
+     if (condition1) {
+       // code to be executed if condition1 is true
+     } else if (condition2) {
+       // code to be executed if condition2 is true
+     } else {
+       // code to be executed if all conditions are false
+     }
+
+
+   - Switch statement: Evaluates an expression and executes different blocks of code based on its value.
+javascript
+     switch (expression) {
+       case value1:
+         // code to be executed if expression equals value1
+         break;
+       case value2:
+         // code to be executed if expression equals value2
+         break;
+       default:
+         // code to be executed if expression doesn't match any cases
+     }
+
+
+2. Loops:
+   - For loop: Repeats a block of code a specified number of times.
+javascript
+     for (initialization; condition; iteration) {
+       // code to be executed in each iteration
+     }
+
+
+   - While loop: Repeats a block of code while a specified condition is true.
+javascript
+     while (condition) {
+       // code to be executed as long as the condition is true
+     }
+
+
+   - Do-while loop: Repeats a block of code while a specified condition is true, but the condition is checked after the block is executed.
+javascript
+     do {
+       // code to be executed at least once
+     } while (condition);
+
+
+   - Break statement: Terminates the execution of a loop.
+javascript
+     for (var i = 0; i < 10; i++) {
+       if (i === 5) {
+         break; // exit the loop when i equals 5
+       }
+       // code to be executed in each iteration
+     }
+
+
+   - Continue statement: Skips the rest of the current iteration and continues to the next iteration.
+javascript
+     for (var i = 0; i < 10; i++) {
+       if (i === 5) {
+         continue; // skip the rest of the code in this iteration
+       }
+       // code to be executed in each iteration except when i equals 5
+     }
