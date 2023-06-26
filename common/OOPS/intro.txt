@@ -1,0 +1,33 @@
+OOPS in Javascript(Object Oriented Programming system)
+
+Clean Code separation
+Re-usability
+Stability
+Testability
+
+Classes & Objects
+-----------------
+Classes consist Member variable & member functions
+        name1.length // member variable
+        name1.trim() // member function
+		
+Objects -> implementation
+
+Oracle -> DB
+C++ - 100% OOPS
+Java - 100% OOPS
+Microsoft
+Visual Basic programming driven -> event based
+C# 2000 - 100%
+
+            constructor(make, model) {
+                this.make = make;
+                this.model = model;
+            }
+
+            drive() {
+                console.log("The car is driving.");
+            }
+			
+			        const myCar = new Car("Honda", "Civic");
+        myCar.drive(); // Output: The car is driving.
