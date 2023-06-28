@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML/CSS Layout Demo</title>
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+  <div class="layout">
+    <div class="header">HTML/CSS Layout session</div>
+    <div class="menu">menu</div>
+    
+    
+    <div class="content">
+  
+
+    </div>
+    <div class="ad">
+
+      <img src="./image/addimage.jpg" alt="first image not visble">
+      <img src="./image/addimage3.jpg" alt="second image not visble">
+
+    </div>
+    <div class="footer">
+      copyright &#169; bharathichittrasu-magizhyazh
+    </div>
+
+
+  </div>
+</body>
+
+</html>
