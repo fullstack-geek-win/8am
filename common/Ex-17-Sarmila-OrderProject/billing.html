@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body onload="viewCart()">
+    <h1 class="cartDetail">My Cart</h1>
+
+    <form action="./index.html" method="GET" class="formAlign">
+        <div id="showTable">
+            <table>
+                <tr>
+                    <td class="billingTable">
+                        <div class="itemHeader" id="itemHeader">
+                        </div>
+                        <div id="productDetails">
+                        </div>
+                    </td>
+                    <td class="billingTable pyment">
+                        <div class="itemHeader" id="paymentDetail">
+                        </div>
+                        <div class="paymentDiv">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="paymentAlign">
+                                            MRP Total
+                                        </td>
+                                        <td id="mrpTotal" class="paymentAlign mrpAlign">
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="paymentAlign">
+                                            Product Discount
+                                        </td>
+                                        <td id="discountTotal" class="paymentAlign deliveryCharge">
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="paymentAlign">
+                                            delivery Fee
+                                        </td>
+                                        <td id="deliveryFee" class="paymentAlign deliveryCharge">
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="paymentAlign">
+                                            Total
+                                        </td>
+                                        <td id="Total" class="paymentAlign totalAlign">
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                        <div class="Paymentfooter"><button type="submit" class="makePayment" onclick="showPopup()">Make
+                                Payment</button></div>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="footer"><button type="submit" class="buttonAlign" onclick="emptyArray()">Go back to Item
+                List</button></div>
+    </form>
+
+    <script type="text/javascript" src="./billingScript.js"></script>
+</body>
+
+</html>

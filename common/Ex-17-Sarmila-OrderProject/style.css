@@ -1,0 +1,303 @@
+.itemDivAlign {
+    border: 1px solid;
+    padding: 5px;
+}
+
+#itemCheckList {
+    border: 2px double;
+    padding: 5px;
+    background: linear-gradient(110.5deg, rgba(248, 196, 249, 0.66) 22.8%, rgba(253, 122, 4, 0.15) 64.6%);
+    border-radius: 50px;
+    border-color: chocolate;
+}
+
+body {
+    /* background: linear-gradient(243deg, rgb(255, 253, 221) 13.4%, rgb(248, 215, 215) 82.1%); */
+    background: radial-gradient(circle at 11.7% 80.6%, rgb(249, 185, 255) 0%, rgb(177, 172, 255) 49.3%, rgb(98, 203, 255) 89%);
+}
+
+.itemRow {
+    /* padding: 5px;  */
+    border-bottom: 1px solid lightgrey;
+    border-radius: 20px;
+    text-align: center;
+}
+
+input {
+    margin-right: 2%;
+    width: 8%;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: aliceblue;
+    margin-left: 0px;
+    text-align: center;
+    color: rgb(216, 78, 85);
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+label {
+    font-size: 15px;
+    color: rgb(72, 0, 4);
+    font-family: cursive;
+}
+
+.checkboxAlign {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.imgAndDes {
+    display: inline;
+}
+
+.itemImgDescription {
+    display: inline-block;
+}
+
+.itemImageDes {
+    display: inline;
+}
+
+.itemImage {
+    width: 85px;
+    vertical-align: middle;
+    border-radius: 20px 0px;
+}
+
+table {
+    display: inline;
+    vertical-align: middle;
+}
+
+.Description {
+    width: 225px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    /* background-image: linear-gradient(71.04deg, rgb(14, 113, 67) -6.92%, rgb(115, 236, 179) 109.43%); */
+    background-image: linear-gradient(71.04deg, rgb(72, 0, 4) -6.92%, rgb(216, 78, 85) 109.43%);
+    color: antiquewhite;
+    text-align: center;
+    padding: 0px;
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-bottom: 5px;
+}
+
+.productName {
+    font-size: 17px;
+    padding-top: 11px;
+    font-weight: 600;
+    color: aqua;
+    font-family: emoji;
+}
+
+.productMRP {
+    margin: 0;
+    font-size: 14px;
+    margin-top: 4px;
+    margin-bottom: 3px;
+}
+
+.productOffer {
+    margin: 0px;
+    width: 90px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 12px;
+    padding: 5px;
+    background-image: linear-gradient(71.04deg, rgb(14, 113, 67) -6.92%, rgb(115, 236, 179) 109.43%);
+    font-weight: bolder;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.header {
+    text-align: center;
+    border: 2px solid black;
+    background-color: blue;
+    padding: 0px;
+    font-size: 35px;
+    margin-bottom: 2px;
+    border-radius: 35px;
+    background: linear-gradient(109.6deg, rgb(104, 183, 249) 31.3%, rgb(176, 248, 200) 100.2%);
+}
+
+.footer {
+    margin-left: 41%;
+    margin-right: 34%;
+    margin-top: 10px;
+}
+
+.buttonAlign {
+    padding: 4px;
+    padding-right: 29px;
+    padding-left: 30px;
+    border-radius: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    background-image: linear-gradient(71.04deg, rgb(14, 113, 67) -6.92%, rgb(115, 236, 179) 109.43%);
+    border: 3px solid;
+}
+
+.billingTable {
+    border: 1px solid;
+    border-radius: 45px;
+    padding: 20px;
+    background: linear-gradient(243deg, rgb(255, 253, 221) 13.4%, rgb(248, 215, 215) 82.1%);
+    width: 1%;
+}
+
+.onlyImg {
+    display: inline-block;
+}
+
+.billingProductImg {
+    display: inline-block;
+}
+
+.selecteItemImage {
+    width: 140px;
+    vertical-align: middle;
+    border-radius: 20px 0px;
+    margin-left: 60px;
+}
+
+.itemName {
+    font-size: 20px;
+    font-family: emoji;
+    font-weight: 700;
+    text-shadow: 1px 0 0 black;
+    color: brown;
+}
+
+.discountAmt {
+    color: black;
+    font-family: cursive;
+    font-weight: 700;
+    text-shadow: 1px 0 green;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.MRPAndOffer {
+    margin: 0px;
+    border: none;
+    padding: 10px;
+    border-radius: 17px;
+    background-color: burlywood;
+    font-weight: bold;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.selectedDes {
+    padding: 20px;
+}
+
+.selectedItemDiv {
+    margin-bottom: 10px;
+    border-bottom: 1px solid;
+    padding: 15px;
+    border-color: lightslategrey;
+}
+
+.itemHeader {
+    font-weight: 700;
+    font-family: cursive;
+    text-align: center;
+    font-size: 23px;
+    /* text-shadow: 5px 0px navajowhite; */
+    background: darkkhaki;
+    padding: 3px;
+    border-radius: 0px 25px 0px 25px;
+}
+
+.soldBy {
+    color: dimgrey;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: math;
+}
+
+.cartDetail {
+    border: 1px solid;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border-radius: 30px;
+    padding: 5px;
+    text-align: center;
+    background-image: linear-gradient(71.04deg, rgb(185, 95, 67) -6.92%, rgb(115, 264, 228) 109.43%);
+}
+
+.paymentAlign {
+    padding: 20px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    margin-left: 0px;
+    font-size: 20px;
+    border-bottom: 1px solid;
+    border-color: darkgray;
+    border-radius: 8px;
+    padding-top: 30px;
+    font-family: ui-monospace;
+    color: teal;
+    font-weight: bold;
+}
+
+.paymentDiv {
+    margin-left: 10%;
+}
+
+.pyment {
+    vertical-align: top;
+}
+
+.makePayment {
+    padding: 5px;
+    margin-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 47%;
+    background-color: darksalmon;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 9px;
+}
+
+.Paymentfooter {
+    margin-left: 37%;
+}
+
+.totalAlign {
+    color: black
+}
+
+.mrpAlign {
+    color: darkgray;
+}
+
+.totalDiscount {
+    color: red;
+}
+
+.deliveryCharge {
+    color: green;
+}
+
+.emptyCart {
+    text-align: center;
+    font-size: 50px;
+    border: 1px solid;
+    height: 250px;
+    margin-top: 1%;
+    padding-top: 200px;
+    border-radius: 100px;
+    background: linear-gradient(243deg, rgb(255, 253, 221) 13.4%, rgb(248, 215, 215) 82.1%);
+    text-shadow: 2px 1px black;
+}
