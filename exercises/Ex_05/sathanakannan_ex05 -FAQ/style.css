@@ -1,0 +1,57 @@
+/* Global Style for FAQ */
+div {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p,
+div.answer {
+    background-color:darkgrey;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.Question {
+    background-color:chocolate;
+    padding-top: 5px;
+}
+
+body {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:cornsilk;
+}
+
+.Question1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    color: brown
+}
+
+.queFont {
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.smallFont {
+    font-size: small;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    border: 2px solid black;
+    margin: 0px;
+    background-color:aquamarine;
+}
+
+.border {
+    border: 2px solid black;
+}
+
+p.noMargin {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
