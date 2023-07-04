@@ -1,0 +1,104 @@
+OOPS
+====
+
+Classes & Objects
+	- Constructor/Default Constructor
+	- Member Variable & Member FUnctions
+	- Memory/Clear
+
+Polymorphism - Poly - many
+	Deals about multiple Class & Its Functions
+	- Overriding
+		
+	- Overloading 
+		//n no of parameters
+		//diff datatypes
+
+Inheritance
+multiple Class & Its Functions
+Class A {a,b, c} A is base class
+Class B entends A {c,d  a,b} B derived class
+
+single 
+Class B entends A {c,d  a,b}
+
+multiple (interfaces)
+Class A {a,b}
+Class B {c,d}
+Class C entends A, B {c1, c2  a,b  c,d)
+
+multilevel
+Class A {a,b}
+Class B entends A {c,d  a,b}
+Class C entends B {c1, c2  a,b  c,d)
+
+hybrid
+Class A {a,b}
+Class B entends A {c,d  a,b}
+Class C entends A {c1,c2  a,b)
+Class D entends B,C {
+D: d1, d2,  
+B: c,d  B.a,B.b
+C: c1,c2  C.a,C.b
+Ambiguty error
+
+Abstraction
+
+Encapsulation
+	
+Interfaces
+Abr
+Interface iA implements A, B {
+a()
+b()
+c()
+a1()
+b1()
+c2()
+
+x()
+y()
+z()
+}
+Blueprint of the Class
+
+
+Class A {
+a() {
+
+
+}
+b() {
+
+
+
+}
+c()
+b entends a()
+a1()
+b1()
+c2()
+b1 entends a()
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
