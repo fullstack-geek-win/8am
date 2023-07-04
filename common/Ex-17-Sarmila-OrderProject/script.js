@@ -81,9 +81,6 @@ for (let item = 0; item < itemList.lists.length; item++) {
     let itemPrizeLabel = document.createElement("label");
     let itemPrizeText = document.createElement("input");
 
-    let itemImageLabel = document.createElement("label");
-    let itemImage = document.createElement("img");
-
     // Item check 
     checkSelected = document.createElement("INPUT");
     checkSelected.setAttribute("type", "checkbox");
@@ -126,6 +123,7 @@ for (let item = 0; item < itemList.lists.length; item++) {
     itemPrizeText.name = "itemPrice" + item;
     itemPrizeText.value = itemList.lists[item].price;
 
+    //main div
     var newDiv = document.createElement("div");
     newDiv.id = 'itemTr' + item;
     newDiv.className = "itemRow"
@@ -157,7 +155,6 @@ for (let item = 0; item < itemList.lists.length; item++) {
     imgDiv.id = 'imgDiv' + item;
     imgDiv.className = "Description";
 
-    /////////////////////////////// Creating a div adding innerHTML///////////////////////////////////
     var productNameAndCost = document.createElement("div");
     productNameAndCost.id = 'productNameAndCost' + item;
     productNameAndCost.className = "productNameAndCost";

@@ -95,12 +95,15 @@ function viewCart() {
         if (total > 500) {
             document.getElementById("deliveryFee").innerHTML = "Free Shipping";
             document.getElementById("deliveryFee").style.color = "green";
+            document.getElementById("Total").innerHTML = "Rs. " + total;
         } else {
             document.getElementById("deliveryFee").innerHTML = "Rs. 40";
             document.getElementById("deliveryFee").style.color = "red";
+            let x = parseInt(total) + 40;
+            document.getElementById("Total").innerHTML = "Rs. " + x;
         }
         document.getElementById("mrpTotal").innerHTML = "Rs. " + mrp;
-        document.getElementById("Total").innerHTML = "Rs. " + total;
+        //document.getElementById("Total").innerHTML = "Rs. " + total;
         document.getElementById("discountTotal").innerHTML = "- Rs. " + (mrp - total);
         console.log(mrp);
         console.log(total);
